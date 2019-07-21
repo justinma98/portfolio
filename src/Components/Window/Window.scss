@@ -75,16 +75,30 @@
     padding: 20px;
     background-color: white;
     overflow: scroll;
+    overflow-x: hidden;
     hyphens: auto;
   }
 
   &__scale {
-    position: absolute;
-    height: 16px;
-    width: 16px;
-    right: 0px;
-    bottom: 0px;
-    transform: translate(6px, 6px);
-    cursor: nwse-resize;
+
+    .icon {
+      background-image: url("../../assets/sprites/scale-icon.svg");
+      zoom: 0.5;
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      right: 6px;
+      bottom: 6px;
+      border: 0;
+    }
+    
+    .area {
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      right: -4px;
+      bottom: -4px;
+      cursor: nwse-resize;
+    }
   }
 }
