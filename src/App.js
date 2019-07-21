@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import LandingPage from "./Pages/LandingPage/LandingPage";
-import AboutPage from "./Pages/AboutPage/AboutPage";
+import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
+import AboutPage from "./Pages/AboutPage/AboutPage.jsx";
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -16,5 +16,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
