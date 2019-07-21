@@ -5,12 +5,17 @@ export default class Window extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { };
+    this.state = { 
+      width: 400,
+      height: 200
+    };
   }
 
   render() {
     return (
-      <h1>About Me...</h1>
+      <div className="window_wrapper" style={{width:this.state.width, height:this.state.height}}>
+        hello
+      </div>
     );
   }
 }
