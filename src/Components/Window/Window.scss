@@ -1,4 +1,88 @@
-.window_wrapper {
-  background-color: blue;
+@import '../../assets/font/font.scss';
+
+.window {
+  position: fixed;
+  display: inline-block;
   border-radius: 10px;
+  user-select: none;
+  font-family: 'Inconsolata';
+
+  &__header, &__content {
+    border: 2px solid blue;
+  }
+
+  &__header {
+    position: relative;
+    background-color: blue;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+    height: 22px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 5px;
+    height: 11px;
+    width: 11px;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    &.-exit{
+      left: 6px;
+      background-color: rgb(253, 37, 22);
+
+      &:hover {
+        background-color: rgb(255, 138, 138);
+      }
+    }
+
+    &.-minimize{
+      left: 23px;
+      background-color: rgb(255, 187, 0);
+
+      &:hover {
+        background-color: rgb(255, 237, 74);
+      }
+    }
+
+    &.-maximize{
+      left: 40px;
+      background-color: rgb(21, 206, 67); 
+      
+      &:hover {
+        background-color: rgb(52, 245, 100); 
+      }
+    }
+  }
+
+  &__content {
+    min-width: 130px;
+    min-height: 20px;
+    max-width: 800px;
+    max-height: 500px;
+    border-radius: 0 0 10px 10px;
+    border-top: 0;
+    padding: 20px;
+    background-color: white;
+  }
+
+  &__scale {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right: 0px;
+    bottom: 0px;
+    transform: translate(6px, 6px);
+    cursor: nwse-resize;
+  }
 }
