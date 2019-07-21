@@ -13,13 +13,19 @@ export default class Window extends Component {
       offX: 0,
       offY: 0,
       zIndex: 0,
-      isDragging: true
+      isDragging: true,
+      title: "This is a really long title"
     };
 
     this.onMouseDownDrag = this.onMouseDownDrag.bind(this);
     this.onMouseDownScale = this.onMouseDownScale.bind(this);
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseUp = this.onMouseUp.bind(this);
+    this.renderTitle = this.renderTitle.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener("mouseup", this.onMouseUp);
   }
 
   onMouseDownDrag(e) {
@@ -51,6 +57,17 @@ export default class Window extends Component {
     document.removeEventListener("mousemove", this.onMouseMove);
   }
 
+  renderTitle() {
+    let width = this.state.width < 130 ? 130 : this.state.width;
+    let charLeft = Math.round(width/10) - 7;
+    console.log(charLeft, this.state.title.length)
+    if (charLeft < this.state.title.length){
+      return this.state.title.slice(0, charLeft-2) + "..."
+    } else {
+      return this.state.title;
+    }
+  }
+
   render() {
     return (
       <div
@@ -63,9 +80,8 @@ export default class Window extends Component {
         <div
           className="window__header"
           onMouseDown={this.onMouseDownDrag}
-          onMouseUp={this.onMouseUp}
         >
-          <span>hello</span>
+          <span>{this.renderTitle()}</span>
           <div className="window__button -exit" />
           <div className="window__button -minimize" />
           <div className="window__button -maximize" />
@@ -74,12 +90,11 @@ export default class Window extends Component {
           className="window__content"
           style={{ width: this.state.width, height: this.state.height }}
         >
-          hello
+          this feature is hi key cool. It even scrolls. it even hyphenates reallylongwordslikethisone. this is amazing!!!
         </div>
         <div
           className="window__scale"
           onMouseDown={this.onMouseDownScale}
-          onMouseUp={this.onMouseUp}
         />
       </div>
     );

@@ -74,6 +74,8 @@
     border-top: 0;
     padding: 20px;
     background-color: white;
+    overflow: scroll;
+    hyphens: auto;
   }
 
   &__scale {
