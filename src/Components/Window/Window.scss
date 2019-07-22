@@ -79,26 +79,22 @@
     hyphens: auto;
   }
 
-  &__scale {
-
-    .icon {
-      background-image: url("../../assets/sprites/scale-icon.svg");
-      zoom: 0.5;
-      position: absolute;
-      height: 26px;
-      width: 26px;
-      right: 6px;
-      bottom: 6px;
-      border: 0;
-    }
-    
-    .area {
-      position: absolute;
-      height: 18px;
-      width: 18px;
-      right: -4px;
-      bottom: -4px;
-      cursor: nwse-resize;
-    }
+  &__scaleIcon {
+    background-image: url("../../assets/sprites/scale-corner.svg");
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    right: 4px;
+    bottom: 4px;
+    border: 0;
+  }
+  
+  &__scaleArea {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    right: -4px;
+    bottom: -4px;
+    cursor: nwse-resize;
   }
 }

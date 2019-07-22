@@ -1,0 +1,21 @@
+@import '../../assets/font/font.scss';
+
+.icon {
+  width: 60px;
+  margin: 10px;
+  border-radius: 10px;
+
+  &__thumbnail {
+    background-image: url("../../assets/sprites/file-icon.svg");
+    height: 60px;
+    width: 60px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-family: 'Inconsolata';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+}

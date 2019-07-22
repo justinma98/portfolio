@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import "./LandingPage.scss";
 import Window from "../../components/Window/Window";
+import Icon from "../../components/Icon/Icon";
 
 class LandingPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      topZIndex: 1
+      topZIndex: 1,
+      windows: [<Window selectWindow={this.selectWindow}/>]
     };
-
-    this.selectWindow = this.selectWindow.bind(this);
   }
 
-  selectWindow(zIndex) {
+  selectWindow = (zIndex) => {
     let topZIndex = this.state.topZIndex;
     if (zIndex === topZIndex) return zIndex;
     this.setState({
@@ -26,8 +26,8 @@ class LandingPage extends Component {
     return (
       <div>
         <h1>Welcome!</h1>
-        <Window selectWindow={this.selectWindow} />
-        <Window selectWindow={this.selectWindow} />
+        {this.state.windows}
+        <Icon open={this.openWindow} />
       </div>
     );
   }
