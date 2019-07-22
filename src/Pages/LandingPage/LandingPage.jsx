@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 import "./LandingPage.scss";
 import Window from "../../components/Window/Window";
 import Icon from "../../components/Icon/Icon";
