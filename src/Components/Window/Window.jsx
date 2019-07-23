@@ -1,4 +1,4 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import * as Constants from "../../constants";
 import "./Window.scss";
 
@@ -7,9 +7,7 @@ export default class Window extends Component {
     width: 400,
     height: 200,
     posX: 200,
-    posY: 100,
-    title: "New Window",
-    zIndex: 0
+    posY: 100
   };
 
   constructor(props) {
@@ -19,23 +17,22 @@ export default class Window extends Component {
       ease: true,
       width: 0,
       height: 0,
-      posX: 200,
-      posY: 100,
+      posX: 0,
+      posY: 0,
       offX: 0,
       offY: 0,
       zIndex: 0,
-      isDragging: true,
-      title: ""
+      isDragging: true
     };
   }
 
   componentDidMount = () => {
-    let { width, height, zIndex, title } = this.props;
+    let { width, height, posX, posY } = this.props;
     this.setState({
       width: width,
       height: height,
-      zIndex: zIndex,
-      title: title
+      posX: posX,
+      posY: posY
     });
     document.addEventListener("mouseup", this.onMouseUp);
   };
@@ -50,7 +47,7 @@ export default class Window extends Component {
   };
 
   onMouseDownScale = e => {
-    this.props.selectWindow();
+    this.selectWindow();
     this.setState({
       ease: false,
       offX: this.state.width - e.clientX,
@@ -82,11 +79,12 @@ export default class Window extends Component {
       this.state.width < Constants.MIN_WIDTH
         ? Constants.MIN_WIDTH
         : this.state.width;
-    let charLeft = Math.round(width / 10) - 7;
-    if (charLeft < this.state.title.length) {
-      return this.state.title.slice(0, charLeft - 2) + "...";
+    let charLeft = Math.round(width / 8) - 17;
+    let title = this.props.title;
+    if (charLeft < title.length) {
+      return title.slice(0, charLeft - 2) + "...";
     } else {
-      return this.state.title;
+      return title;
     }
   };
 
@@ -98,7 +96,7 @@ export default class Window extends Component {
   };
 
   close = () => {
-    document.getElementById("test").style.display = "none";
+    document.getElementById(this.props.id).style.display = "none";
     this.setState({
       width: this.props.width,
       height: this.props.height,
@@ -114,9 +112,10 @@ export default class Window extends Component {
   };
 
   render() {
+    let { id } = this.props;
     return (
       <div
-        id="test"
+        id={id}
         className="window"
         onMouseDown={this.selectWindow}
         style={{
@@ -138,15 +137,14 @@ export default class Window extends Component {
           />
         </div>
         <div
-          className="window__content"
+          className="window__content -picture"
           style={{
             transition: this.state.ease ? "all 0.5s ease" : null,
             width: this.state.width,
             height: this.state.height
           }}
         >
-          Here is a sentence. and here is a
-          reallyreallylongwordthatwillgethyphenated. wow super duper cool
+          <img className="picture" src="https://www.w3schools.com/w3css/img_lights.jpg"/>
         </div>
         <div className="window__scaleIcon" />
         <div
