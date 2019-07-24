@@ -1,6 +1,11 @@
 import React, { Component } from "react";
-import * as Constants from "../../constants";
 import "./Window.scss";
+
+const MAX_WIDTH = 800;
+const MAX_HEIGHT = 500;
+const MIN_WIDTH = 200;
+const MIN_MIN_WIDTH = 160;
+const MIN_HEIGHT = 120;
 
 export default class Window extends Component {
   static defaultProps = {
@@ -76,8 +81,8 @@ export default class Window extends Component {
 
   renderTitle = () => {
     let width =
-      this.state.width < Constants.MIN_WIDTH
-        ? Constants.MIN_WIDTH
+      this.state.width < MIN_MIN_WIDTH
+        ? MIN_MIN_WIDTH
         : this.state.width;
     let charLeft = Math.round(width / 8) - 17;
     let title = this.props.title;
@@ -90,8 +95,8 @@ export default class Window extends Component {
 
   scale = maximize => {
     this.setState({
-      width: Constants[maximize ? "MAX_WIDTH" : "MIN_WIDTH"],
-      height: Constants[maximize ? "MAX_HEIGHT" : "MIN_HEIGHT"]
+      width: maximize ? MAX_WIDTH : MIN_WIDTH,
+      height: maximize ? MAX_HEIGHT : MIN_HEIGHT
     });
   };
 
