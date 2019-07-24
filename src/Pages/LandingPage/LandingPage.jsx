@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./LandingPage.scss";
 import Window from "../../components/Window/Window";
-import Icon from "../../components/Icon/Icon";
+import IconContainer from "../../components/IconContainer/IconContainer";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -72,13 +72,19 @@ class LandingPage extends Component {
             selectWindow={this.selectWindow}
           />
         ))}
-        {this.state.windows.map(icon => (
+        <IconContainer
+          direction="row"
+          length={3}
+          icons={this.state.windows}
+          selectWindow={this.selectWindow}
+        />
+        {/* {this.state.windows.map(icon => (
           <Icon
             id={icon.id}
             title={icon.iconTitle}
             selectWindow={this.selectWindow}
           />
-        ))}
+        ))} */}
       </div>
     );
   }
