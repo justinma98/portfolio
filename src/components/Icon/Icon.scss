@@ -1,9 +1,13 @@
 @import '../../assets/font/font.scss';
 
 .icon {
+  position: relative;
+  display:flex;
   width: 60px;
-  margin: 14px 20px;
+  height: 80px;
+  margin: 20px;
   border-radius: 10px;
+  justify-content: center;
 
   &__thumbnail {
     background-image: url("../../assets/sprites/file-icon.svg");
@@ -12,10 +16,11 @@
   }
 
   &__title {
-    margin-top: 10px;
+    position: absolute;
     font-family: 'Inconsolata';
     font-weight: bold;
     font-size: 14px;
     text-align: center;
+    top: 70px;
   }
 }

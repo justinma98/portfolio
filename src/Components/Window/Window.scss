@@ -73,11 +73,14 @@
     border-top: 0;
 
     &.-text {
-      padding: 20px;
       background-color: white;
       overflow: scroll;
       overflow-x: hidden;
-      hyphens: auto;
+
+      .text {
+        padding: 20px;
+        hyphens: auto;
+      }
     }
 
     &.-picture {
@@ -89,6 +92,15 @@
       .picture {
         max-width: 100%;
         max-height: 100%;
+      }
+    }
+
+    &.-folder {
+      background-color: white;
+      overflow: scroll;
+
+      .folder {
+
       }
     }
   }

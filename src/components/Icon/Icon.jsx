@@ -1,35 +1,28 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Icon.scss";
+import { selectWindow } from "../../utils";
 
-export default class Window extends Component {
-  constructor(props) {
-    super(props);
+const icon = (props) => {
+  const [lastClick, setLastClick] = useState(0);
 
-    this.state = {
-      last_t: 0
-    };
-  }
-
-  handleClick = () => {
-    let curr_t = Date.now();
-    if (curr_t - this.state.last_t < 500) {
-      let window = document.getElementById(this.props.id).style;
+  const handleClick = () => {
+    let currClick = Date.now();
+    if (currClick - lastClick < 500) {
+      let window = document.getElementById(props.id).style;
       let zIndex = window.zIndex
-      window.zIndex = this.props.selectWindow(zIndex);
+      window.zIndex = selectWindow(zIndex);
       window.display = null;
     }
-    this.setState({
-      last_t: curr_t
-    });
+    setLastClick(currClick);
   };
 
-  render() {
-    let { title } = this.props;
-    return (
-      <div className="icon" onClick={this.handleClick}>
-        <div className="icon__thumbnail" />
-        <div className="icon__title">{title}</div>
-      </div>
-    );
-  }
+  let { title } = props;
+  return (
+    <div className="icon" onClick={handleClick}>
+      <div className="icon__thumbnail" />
+      <div className="icon__title">{title}</div>
+    </div>
+  );
 }
+
+export default icon

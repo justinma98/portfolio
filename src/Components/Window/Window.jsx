@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Window.scss";
+import { selectWindow } from "../../utils";
 
 const MAX_WIDTH = 800;
 const MAX_HEIGHT = 500;
@@ -52,7 +53,7 @@ export default class Window extends Component {
   };
 
   onMouseDownScale = e => {
-    this.selectWindow();
+    this.mySelectWindow();
     this.setState({
       ease: false,
       offX: this.state.width - e.clientX,
@@ -110,19 +111,19 @@ export default class Window extends Component {
     });
   };
 
-  selectWindow = () => {
+  mySelectWindow = () => {
     this.setState({
-      zIndex: this.props.selectWindow(this.state.zIndex)
+      zIndex: selectWindow(this.state.zIndex)
     });
   };
 
   render() {
-    let { id } = this.props;
+    let { id, type, content } = this.props;
     return (
       <div
         id={id}
         className="window"
-        onMouseDown={this.selectWindow}
+        onMouseDown={this.mySelectWindow}
         style={{
           left: this.state.posX,
           top: this.state.posY,
@@ -142,14 +143,14 @@ export default class Window extends Component {
           />
         </div>
         <div
-          className="window__content -picture"
+          className={"window__content " + type}
           style={{
             transition: this.state.ease ? "all 0.5s ease" : null,
             width: this.state.width,
             height: this.state.height
           }}
         >
-          <img className="picture" src="https://www.w3schools.com/w3css/img_lights.jpg"/>
+          {content}
         </div>
         <div className="window__scaleIcon" />
         <div

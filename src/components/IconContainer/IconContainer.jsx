@@ -3,31 +3,30 @@ import Icon from "../Icon/Icon";
 import "./IconContainer.scss";
 
 const WIDTH = 100;
-const HEIGHT = 113;
+const HEIGHT = 120;
 
 export default class IconContainer extends Component {
-  getFlex = () => {
-    console.log("1 0 " + (this.props.size + 1 + 1).toString() + "%")
-    return "1 0 " + (100/(this.props.size + 1) + 1).toString() + "%";
-  }
+  toPx = n => {
+    return n.toString() + "px";
+  };
 
-  getLength = () => {
-    console.log((this.props.length * (this.props.direction === "row" ? WIDTH : HEIGHT)).toString())
-    return (this.props.length * (this.props.direction === "row" ? WIDTH : HEIGHT)).toString() + "px";
-  }
+  getStyle = () => {
+    console.log("ICONS", this.props.icons)
+    let { direction, length } = this.props;
+    return direction === "row"
+      ? { flexDirection: direction, width: this.toPx(WIDTH * length) }
+      : { flexDirection: direction, height: this.toPx(HEIGHT * length) };
+  };
 
   render() {
-    let props = this.props
+    let { selectWindow, icons } = this.props;
     return (
-      <div
-        className="iconWrapper"
-        style={{ flexDirection: props.direction, [props.direction === "row" ? "width" : "height"]:this.getLength()}}
-      >
-        {props.icons.map(icon => (
+      <div className="iconWrapper" style={this.getStyle()}>
+        {icons.map(icon => (
           <Icon
             id={icon.id}
             title={icon.iconTitle}
-            selectWindow={props.selectWindow}
+            selectWindow={selectWindow}
           />
         ))}
       </div>
