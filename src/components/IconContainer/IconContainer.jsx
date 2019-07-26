@@ -1,35 +1,33 @@
-import React, { Component } from "react";
+import React from "react";
 import Icon from "../Icon/Icon";
 import "./IconContainer.scss";
 
-const WIDTH = 100;
-const HEIGHT = 120;
+const iconContainer = ({direction, length, selectWindow, icons}) => {
+  const WIDTH = 100;
+  const HEIGHT = 120;
 
-export default class IconContainer extends Component {
-  toPx = n => {
+  const toPx = n => {
     return n.toString() + "px";
   };
 
-  getStyle = () => {
-    console.log("ICONS", this.props.icons)
-    let { direction, length } = this.props;
+  const getStyle = () => {
     return direction === "row"
-      ? { flexDirection: direction, width: this.toPx(WIDTH * length) }
-      : { flexDirection: direction, height: this.toPx(HEIGHT * length) };
+      ? { flexDirection: direction, width: toPx(WIDTH * length) }
+      : { flexDirection: direction, height: toPx(HEIGHT * length) };
   };
 
-  render() {
-    let { selectWindow, icons } = this.props;
-    return (
-      <div className="iconWrapper" style={this.getStyle()}>
-        {icons.map(icon => (
-          <Icon
-            id={icon.id}
-            title={icon.iconTitle}
-            selectWindow={selectWindow}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+  return (
+    <div className="iconWrapper" style={getStyle()}>
+      {icons.map(icon => (
+        <Icon
+          key={icon.id}
+          id={icon.id}
+          title={icon.iconTitle}
+          selectWindow={selectWindow}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default iconContainer;

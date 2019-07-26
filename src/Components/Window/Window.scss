@@ -76,11 +76,11 @@
       background-color: white;
       overflow: scroll;
       overflow-x: hidden;
+    }
 
-      .text {
-        padding: 20px;
-        hyphens: auto;
-      }
+    .text {
+      padding: 20px;
+      hyphens: auto;
     }
 
     &.-picture {
@@ -88,20 +88,16 @@
       align-items: center;
       justify-content: center;
       background-color: black;
+    }
 
-      .picture {
-        max-width: 100%;
-        max-height: 100%;
-      }
+    .picture {
+      max-width: 100%;
+      max-height: 100%;
     }
 
     &.-folder {
       background-color: white;
       overflow: scroll;
-
-      .folder {
-
-      }
     }
   }
 
