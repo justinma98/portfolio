@@ -25,7 +25,7 @@ const iconContainer = props => {
           id={icon.id}
           title={icon.iconTitle}
           type={icon.type}
-          selectWindow={selectWindow}
+          source={icon.source}
         />
       ))}
     </div>

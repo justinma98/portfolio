@@ -14,6 +14,7 @@ const window = props => {
   const [zIndex, setZIndex] = useState(0);
   const [ease, setEase] = useState(true);
 
+  let { id, type, title, content } = props;
   let offset = { x: 0, y: 0 };
   let isDrag = true;
 
@@ -43,30 +44,28 @@ const window = props => {
   const renderTitle = () => {
     let width = size.x < MIN_MIN_WIDTH ? MIN_MIN_WIDTH : size.x;
     let charLeft = Math.round(width / 8) - 17;
-    let title = props.title;
     return charLeft < title.length
       ? title.slice(0, charLeft - 2) + "..."
       : title;
   };
 
-  const scale = maximize => {
+  const scaleWindow = maximize => {
     setSize({
       x: maximize ? MAX_WIDTH : MIN_WIDTH,
       y: maximize ? MAX_HEIGHT : MIN_HEIGHT
     });
   };
 
-  const close = () => {
-    document.getElementById(props.id).style.display = "none";
-    setSize({ x: props.width, y: props.height });
-    setPos({ x: props.posX, y: props.posY });
+  const closeWindow = () => {
+    document.getElementById(id).style.display = "none";
+    setSize(props.size);
+    setPos(props.pos);
   };
 
   const mySelectWindow = () => {
     setZIndex(selectWindow(zIndex));
   };
 
-  let { id, type, content } = props;
   return (
     <div
       id={id}
@@ -80,12 +79,18 @@ const window = props => {
     >
       <div className="window__header" onMouseDown={e => onMouseDown(e, true)}>
         <span>{renderTitle()}</span>
-        <div className="window__button -exit" onClick={close} />
+        <div 
+          className="window__button -exit" 
+          onClick={closeWindow} 
+        />
         <div
           className="window__button -minimize"
-          onClick={() => scale(false)}
+          onClick={() => scaleWindow(false)}
         />
-        <div className="window__button -maximize" onClick={() => scale(true)} />
+        <div
+          className="window__button -maximize"
+          onClick={() => scaleWindow(true)}
+        />
       </div>
       <div
         className={"window__content -" + type}
