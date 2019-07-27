@@ -10,9 +10,16 @@
   justify-content: center;
 
   &__thumbnail {
-    background-image: url("../../assets/sprites/file-icon.svg");
     height: 60px;
     width: 60px;
+
+    &.-text {
+      background-image: url("../../assets/sprites/text-icon.svg");
+    }
+
+    &.-folder {
+      background-image: url("../../assets/sprites/folder-icon.svg");
+    }
   }
 
   &__title {

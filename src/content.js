@@ -1,7 +1,7 @@
 import React from "react";
 import IconContainer from "./components/IconContainer/IconContainer";
 
-const WINDOW_TYPE = {
+const FILE_TYPE = {
   PICTURE: "picture",
   FOLDER: "folder",
   TEXT: "text"
@@ -14,10 +14,10 @@ const FILE1 = [
     pos: { x: 200, y: 100 },
     windowTitle: "Northern Lights.jpg",
     iconTitle: "Northern Lights.jpg",
-    type: WINDOW_TYPE.PICTURE,
+    type: FILE_TYPE.PICTURE,
     content: (
       <img
-        className={WINDOW_TYPE.PICTURE}
+        className={FILE_TYPE.PICTURE}
         alt="northern lights"
         src="https://www.w3schools.com/w3css/img_lights.jpg"
       />
@@ -29,7 +29,7 @@ const FILE1 = [
     pos: { x: 250, y: 150 },
     windowTitle: "Window Title 2",
     iconTitle: "IconTitle2",
-    type: WINDOW_TYPE.FOLDER
+    type: FILE_TYPE.FOLDER
   },
   {
     id: "test3",
@@ -37,7 +37,7 @@ const FILE1 = [
     pos: { x: 300, y: 200 },
     windowTitle: "WWWWWWWWWW Title 3",
     iconTitle: "IconTitle3",
-    type: WINDOW_TYPE.PICTURE
+    type: FILE_TYPE.PICTURE
   },
   {
     id: "test4",
@@ -45,7 +45,7 @@ const FILE1 = [
     pos: { x: 150, y: 250 },
     windowTitle: "iiiiiiii Title 3",
     iconTitle: "IconTitle3",
-    type: WINDOW_TYPE.PICTURE
+    type: FILE_TYPE.PICTURE
   }
 ];
 
@@ -56,10 +56,10 @@ export const DESKTOP = [
     pos: { x: 200, y: 100 },
     windowTitle: "Northern Lights.jpg",
     iconTitle: "Northern Lights.jpg",
-    type: WINDOW_TYPE.PICTURE,
+    type: FILE_TYPE.PICTURE,
     content: (
       <img
-        className={WINDOW_TYPE.PICTURE}
+        className={FILE_TYPE.PICTURE}
         alt="northern lights"
         src="https://www.w3schools.com/w3css/img_lights.jpg"
       />
@@ -71,7 +71,7 @@ export const DESKTOP = [
     pos: { x: 250, y: 150 },
     windowTitle: "Folder",
     iconTitle: "Folder",
-    type: WINDOW_TYPE.FOLDER,
+    type: FILE_TYPE.FOLDER,
     content: (
       <IconContainer
         style={{ zoom: "0.5" }}
@@ -87,9 +87,9 @@ export const DESKTOP = [
     pos: { x: 300, y: 200 },
     windowTitle: "File.txt",
     iconTitle: "File.txt",
-    type: WINDOW_TYPE.TEXT,
+    type: FILE_TYPE.TEXT,
     content: (
-      <div className={WINDOW_TYPE.TEXT}>
+      <div className={FILE_TYPE.TEXT}>
         Here is a paragraph Here is a paragraph Here is a paragraph Here is a
         paragraph
         <img
@@ -106,6 +106,8 @@ export const DESKTOP = [
     pos: { x: 150, y: 250 },
     windowTitle: "iiiiiiii Title 3",
     iconTitle: "IconTitle3",
-    type: WINDOW_TYPE.PICTURE
+    type: FILE_TYPE.PICTURE,
+    content: <iframe name="I1" id="if1"
+    src="https://www.google.com"></iframe>
   }
 ];

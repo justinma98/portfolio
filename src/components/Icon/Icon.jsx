@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./Icon.scss";
 import { selectWindow } from "../../utils";
 
-const icon = ({title, id}) => {
+const icon = props => {
   const [lastClick, setLastClick] = useState(0);
+  const {id, title, type} = props;
 
   const handleClick = () => {
     let currClick = Date.now();
@@ -18,7 +19,7 @@ const icon = ({title, id}) => {
 
   return (
     <div className="icon" onClick={handleClick}>
-      <div className="icon__thumbnail" />
+      <div className={"icon__thumbnail -" + type} />
       <div className="icon__title">{title}</div>
     </div>
   );

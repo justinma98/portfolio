@@ -24,6 +24,7 @@ const iconContainer = props => {
           key={icon.id}
           id={icon.id}
           title={icon.iconTitle}
+          type={icon.type}
           selectWindow={selectWindow}
         />
       ))}
