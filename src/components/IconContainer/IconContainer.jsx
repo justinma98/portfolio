@@ -2,7 +2,8 @@ import React from "react";
 import Icon from "../Icon/Icon";
 import "./IconContainer.scss";
 
-const iconContainer = ({direction, length, selectWindow, icons}) => {
+const iconContainer = props => {
+  const { direction, length, selectWindow, icons } = props;
   const WIDTH = 100;
   const HEIGHT = 120;
 

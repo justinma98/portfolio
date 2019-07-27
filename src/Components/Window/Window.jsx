@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Window.scss";
 import { selectWindow } from "../../utils";
 
@@ -9,28 +9,21 @@ const MIN_MIN_WIDTH = 160;
 const MIN_HEIGHT = 120;
 
 const window = props => {
-  const [ease, setEase] = useState(true);
-  const [size, setSize] = useState({ x: props.width, y: props.height });
-  const [pos, setPos] = useState({ x: props.posX, y: props.posY });
+  const [size, setSize] = useState(props.size);
+  const [pos, setPos] = useState(props.pos);
   const [zIndex, setZIndex] = useState(0);
-
-  useEffect(() => document.addEventListener("mouseup", onMouseUp), []);
+  const [ease, setEase] = useState(true);
 
   let offset = { x: 0, y: 0 };
-  let isDragging = true;
+  let isDrag = true;
 
-  const onMouseDownDrag = e => {
-    offset = { x: pos.x - e.clientX, y: pos.y - e.clientY };
-    isDragging = true;
-    document.addEventListener("mousemove", onMouseMove);
-  };
-
-  const onMouseDownScale = e => {
-    mySelectWindow();
+  const onMouseDown = (e, drag) => {
+    isDrag = drag;
+    const attr = isDrag ? pos : size;
+    offset = { x: attr.x - e.clientX, y: attr.y - e.clientY };
     setEase(false);
-    offset = { x: size.x - e.clientX, y: size.y - e.clientY };
-    isDragging = false;
     document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
   };
 
   const onMouseMove = e => {
@@ -38,27 +31,22 @@ const window = props => {
       x: offset.x + e.clientX,
       y: Math.max(offset.y + e.clientY, 0)
     };
-    if (isDragging) {
-      setPos(newState);
-    } else {
-      setSize(newState);
-    }
+    isDrag ? setPos(newState) : setSize(newState);
   };
 
   const onMouseUp = () => {
     setEase(true);
     document.removeEventListener("mousemove", onMouseMove);
+    document.removeEventListener("mouseup", onMouseUp);
   };
 
   const renderTitle = () => {
     let width = size.x < MIN_MIN_WIDTH ? MIN_MIN_WIDTH : size.x;
     let charLeft = Math.round(width / 8) - 17;
     let title = props.title;
-    if (charLeft < title.length) {
-      return title.slice(0, charLeft - 2) + "...";
-    } else {
-      return title;
-    }
+    return charLeft < title.length
+      ? title.slice(0, charLeft - 2) + "..."
+      : title;
   };
 
   const scale = maximize => {
@@ -90,7 +78,7 @@ const window = props => {
         zIndex: zIndex
       }}
     >
-      <div className="window__header" onPointerDown={onMouseDownDrag}>
+      <div className="window__header" onMouseDown={e => onMouseDown(e, true)}>
         <span>{renderTitle()}</span>
         <div className="window__button -exit" onClick={close} />
         <div
@@ -110,7 +98,10 @@ const window = props => {
         {content}
       </div>
       <div className="window__scaleIcon" />
-      <div className="window__scaleArea" onMouseDown={onMouseDownScale} />
+      <div
+        className="window__scaleArea"
+        onMouseDown={e => onMouseDown(e, false)}
+      />
     </div>
   );
 };
