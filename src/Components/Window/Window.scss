@@ -6,27 +6,19 @@
   border-radius: 10px;
   font-family: 'Inconsolata';
   user-select: none;
-
-  &__header, &__content {
-    border: 2px solid blue;
-  }
+  overflow: hidden;
+  border: 2px solid blue;
+  border-radius: 10px;
 
   &__header {
     position: relative;
     background-color: blue;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 0;
     height: 22px;
     font-weight: bold;
     font-size: 14px;
     color: white;
     text-align: center;
     line-height: 22px;
-    cursor: grab;
-
-    &:active {
-      cursor: grabbing;
-    }
   }
 
   &__button {
@@ -35,7 +27,6 @@
     height: 11px;
     width: 11px;
     border-radius: 6px;
-    cursor: pointer;
     
     &.-exit{
       left: 6px;
@@ -66,11 +57,8 @@
   }
 
   &__content {
-    min-width: 160px;
-    min-height: 80px;
     max-width: 1200px;
     max-height: 640px;
-    border-radius: 0 0 10px 10px;
     border-top: 0;
     overflow: hidden;
 
@@ -92,11 +80,14 @@
       background-color: black;
     }
 
-    .picture {
-      width: 800px;
-      height: 500px;
+    .picture, .video {
       max-width: 100%;
       max-height: 100%;
+    }
+
+    .video {
+      width: 800px;
+      height: 500px;
     }
 
     &.-folder {

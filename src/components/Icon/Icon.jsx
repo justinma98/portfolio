@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Icon.scss";
 import { selectWindow } from "../../utils";
 
 const icon = props => {
-  const [lastClick, setLastClick] = useState(0);
-  const { id, title, type, source } = props;
+  let { id, title, type, source } = props;
+  let lastClick = 0;
 
   const handleClick = () => {
     let currClick = Date.now();
@@ -13,8 +13,9 @@ const icon = props => {
       let zIndex = window.zIndex;
       window.zIndex = selectWindow(zIndex);
       window.display = "block";
+      title = "no";
     }
-    setLastClick(currClick);
+    lastClick = currClick;
   };
 
   return (
