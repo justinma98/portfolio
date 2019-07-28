@@ -4,22 +4,26 @@ import { selectWindow } from "../../utils";
 import { WINDOW } from "../../constants";
 
 const window = props => {
-  const [size, setSize] = useState(props.size);
+  const [size, setSize] = useState({ x: 0, y: 0 });
   const [pos, setPos] = useState(props.pos);
-  const [ease, setEase] = useState("all 0.5s ease");
+  const [ease, setEase] = useState("all 0.3s ease-out");
   const [zIndex, setZIndex] = useState(0);
+  const [opacity, setOpacity] = useState(0);
 
-  useEffect(() => console.log("HELLO"), [props])
-
-  let { id, type, title, content } = props;
+  let { id, type, title, content, close, open } = props;
   let offset = { x: 0, y: 0 };
   let isDrag = true;
 
+  useEffect(() => {
+    if (open) openWindow();
+  }, [open]);
+
   const onMouseDown = (e, drag) => {
+    mySelectWindow(e);
+    setEase(null);
     isDrag = drag;
     const attr = isDrag ? pos : size;
     offset = { x: attr.x - e.clientX, y: attr.y - e.clientY };
-    setEase(null);
     document.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseup", onMouseUp);
   };
@@ -43,7 +47,7 @@ const window = props => {
   };
 
   const renderTitle = () => {
-    if (size.x === 0) return "..."
+    if (size.x === 0) return "...";
     let width = size.x < WINDOW.MIN_WIDTH ? WINDOW.MIN_WIDTH : size.x;
     let charLeft = Math.round(width / 8) - 17;
     return charLeft < title.length
@@ -60,22 +64,29 @@ const window = props => {
 
   const closeWindow = () => {
     setEase("all 0.3s ease-in");
-    setTimeout(resetWindow, 280);
     setSize({ x: 0, y: 0 });
+    setTimeout(closeWindowHelper, 280);
   };
 
-  const resetWindow = () => {
-    document.getElementById(id).style.display = "none";
-    setEase("all 0.5s ease");
-    setSize(props.size);
+  const closeWindowHelper = () => {
+    setOpacity(0);
+    setEase("all 0.3s ease-out");
     setPos(props.pos);
+    close();
   };
 
-  const handleOpen = () => {
-    console.log("OPEN");
+  const openWindow = () => {
+    setOpacity(1);
+    setSize(props.size);
+    setTimeout(openWindowHelper, 280);
   };
 
-  const mySelectWindow = () => {
+  const openWindowHelper = () => {
+    setEase("all 0.5s ease");
+  };
+
+  const mySelectWindow = e => {
+    e.stopPropagation();
     setZIndex(selectWindow(zIndex));
   };
 
@@ -87,7 +98,8 @@ const window = props => {
       style={{
         left: pos.x,
         top: pos.y,
-        zIndex: zIndex
+        zIndex: zIndex,
+        opacity: opacity
       }}
     >
       <div className="window__header" onMouseDown={e => onMouseDown(e, true)}>
