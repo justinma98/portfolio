@@ -2,12 +2,15 @@ import React from "react";
 import IconContainer from "../components/IconContainer/IconContainer";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
+import ME from "./meContent";
+
+const me1 = require("../assets/pictures/me1.jpg");
 
 const DESKTOP = [
   {
     id: "desktop_readme",
     size: { x: 440, y: 300 },
-    pos: { x: -280, y: 120 },
+    pos: { x: -240, y: 120 },
     title: "README.md",
     type: FILE_TYPE.TEXT,
     content: (
@@ -25,23 +28,23 @@ const DESKTOP = [
         <img
           className="picture"
           alt="northern lights"
-          src="https://www.w3schools.com/w3css/img_lights.jpg"
+          src={me1}
         />
       </div>
     )
   },
   {
     id: "desktop_me",
-    size: { x: 400, y: 200 },
-    pos: { x: -250, y: 160 },
+    size: { x: 460, y: 340 },
+    pos: { x: -200, y: 160 },
     title: "About Me",
     type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={4} icons={[]} />
+    content: <IconContainer direction="row" length={4} icons={ME} />
   },
   {
     id: "desktop_dev",
     size: { x: 400, y: 200 },
-    pos: { x: -220, y: 200 },
+    pos: { x: -300, y: 200 },
     title: "Dev Projects",
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" length={4} icons={DEV} />

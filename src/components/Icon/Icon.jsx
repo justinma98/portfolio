@@ -10,26 +10,44 @@ const icon = props => {
 
   useEffect(() => {
     setWindowDOM(document.getElementById("windowWrapper"));
+    switch (props.id) {
+      case "desktop_readme":
+        setTimeout(openWindow, 600);
+        break;
+      case "desktop_me":
+        setTimeout(openWindow, 300);
+        break;
+      case "desktop_dev":
+        setTimeout(openWindow, 0);
+        break;
+    }
   }, []);
 
   let { id, title, type, source } = props;
   let lastClick = 0;
+  let titleClasses = ["icon__title"];
 
   const handleClick = e => {
     e.stopPropagation();
     let currClick = Date.now();
-    if (currClick - lastClick < 500) {
-      if (!windowOpen) setWindowOpen(true);
-      let window = document.getElementById(id).style;
-      let zIndex = window.zIndex;
-      window.zIndex = selectWindow(zIndex);
-      setTimeout(() => window.zIndex = selectWindow(zIndex), 200)
-    }
+    if (currClick - lastClick < 500) openWindow();
     lastClick = currClick;
+  };
+
+  const openWindow = () => {
+    if (!windowOpen) setWindowOpen(true);
+    let window = document.getElementById(id).style;
+    let zIndex = window.zIndex;
+    window.zIndex = selectWindow(zIndex);
+    setTimeout(() => (window.zIndex = selectWindow(zIndex)), 200);
   };
 
   const closeWindow = () => {
     setWindowOpen(false);
+  };
+
+  if (id.includes("desktop")) {
+    titleClasses.push("-desktop");
   }
 
   return (
@@ -39,11 +57,13 @@ const icon = props => {
           <img className="custom" alt="thumbnail" src={source} />
         ) : null}
       </div>
-      <div className="icon__title">{title}</div>
-      {windowDOM ? ReactDOM.createPortal(
-      <Window {...props} close={closeWindow} open={windowOpen}/>,
-      windowDOM
-    ) :  null}
+      <div className={titleClasses.join(" ")}>{title}</div>
+      {windowDOM
+        ? ReactDOM.createPortal(
+            <Window {...props} close={closeWindow} open={windowOpen} />,
+            windowDOM
+          )
+        : null}
     </div>
   );
 };

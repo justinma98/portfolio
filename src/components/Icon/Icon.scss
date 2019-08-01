@@ -1,13 +1,13 @@
-@import '../../assets/font/font.scss';
+@import "../../assets/font/font.scss";
 
 .icon {
   position: relative;
-  display:flex;
+  display: flex;
   margin: 20px;
   margin-bottom: 35px;
   border-radius: 10px;
   justify-content: center;
-  cursor: default;
+  cursor: url("../../assets/sprites/logo.png"), auto;	
 
   &__thumbnail {
     height: 60px;
@@ -33,10 +33,13 @@
 
   &__title {
     position: absolute;
-    font-family: 'Inconsolata';
-    font-weight: bold;
+    font-family: "Inconsolata";
     font-size: 14px;
     text-align: center;
     top: 65px;
+
+    &.-desktop {
+      font-weight: bold;
+    }
   }
 }

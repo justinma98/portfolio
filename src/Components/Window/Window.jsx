@@ -133,4 +133,6 @@ const window = props => {
   );
 };
 
+window.defaultProps = { size: { x: 500, y: 300 } };
+
 export default window;
