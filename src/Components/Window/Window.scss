@@ -93,6 +93,11 @@
       background-color: white;
       overflow: scroll;
     }
+
+    &.-pdf {
+      background-color: black;
+      overflow: scroll;
+    }
   }
 
   &__scaleIcon {

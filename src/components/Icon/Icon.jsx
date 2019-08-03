@@ -9,7 +9,7 @@ const icon = props => {
   const [windowOpen, setWindowOpen] = useState(false);
 
   useEffect(() => {
-    setWindowDOM(document.getElementById("windowWrapper"));
+    setWindowDOM(document.getElementById("windowSpawn"));
     switch (props.id) {
       case "desktop_readme":
         setTimeout(openWindow, 300);

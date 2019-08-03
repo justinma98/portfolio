@@ -5,9 +5,9 @@ import DESKTOP from "../../content/desktopContent";
 
 const landingPage = () => {
   return (
-    <div>
-      <div className="background"/>
-      <div id="windowWrapper" className="windowWrapper" />
+    <div className="landingPage">
+      <div className="background" />
+      <div id="windowSpawn" className="windowSpawn" />
       <IconContainer icons={DESKTOP} direction="column" length={0} />
     </div>
   );
