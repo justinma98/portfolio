@@ -123,12 +123,16 @@ const window = props => {
         }}
       >
         {content}
+        {open ? (
+          <div>
+            <div className="window__scaleIcon" />
+            <div
+              className="window__scaleArea"
+              onMouseDown={e => onMouseDown(e, false)}
+            />
+          </div>
+        ) : null}
       </div>
-      <div className="window__scaleIcon" />
-      <div
-        className="window__scaleArea"
-        onMouseDown={e => onMouseDown(e, false)}
-      />
     </div>
   );
 };

@@ -7,7 +7,8 @@
   margin-bottom: 35px;
   border-radius: 10px;
   justify-content: center;
-  cursor: url("../../assets/sprites/logo.png"), auto;	
+  cursor: url("../../assets/sprites/folder-icon.svg"), auto;	
+  user-select: none;
 
   &__thumbnail {
     height: 60px;
@@ -40,6 +41,8 @@
 
     &.-desktop {
       font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 4px black;
     }
   }
 }

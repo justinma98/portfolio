@@ -1,35 +1,27 @@
 import React from "react";
 import IconContainer from "../components/IconContainer/IconContainer";
+import Typer from "../components/Typer/Typer";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
 import ME from "./meContent";
 
-const me1 = require("../assets/pictures/me1.jpg");
-
 const DESKTOP = [
   {
     id: "desktop_readme",
-    size: { x: 440, y: 300 },
-    pos: { x: -240, y: 120 },
+    size: { x: 400, y: 260 },
+    pos: { x: 50, y: 120 },
     title: "README.md",
     type: FILE_TYPE.TEXT,
     content: (
       <div className={FILE_TYPE.TEXT}>
-        <p>Hello and Welcome!</p>
-        <p>
-          My name is Justin Ma and this is a portfolio of my creative and coding
-          work
-        </p>
-        <p>
-          Feel free to drag, scale, and close these windows just like you would
-          on a regular desktop
-        </p>
-        <p>Have fun exploring!</p>
-        <img
-          className="picture"
-          alt="northern lights"
-          src={me1}
+        <Typer delay={600} phrase="Hello!" />
+        <br />
+        <Typer
+          delay={1400}
+          phrase="My name's Justin Ma               and this is a portfolio of my creative       and coding work."
         />
+        <br />
+        <Typer delay={5000} phrase="Click around to explore:)" />
       </div>
     )
   },
@@ -39,7 +31,7 @@ const DESKTOP = [
     pos: { x: -200, y: 160 },
     title: "About Me",
     type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={4} icons={ME} />
+    content: <IconContainer direction="row" icons={ME} />
   },
   {
     id: "desktop_dev",

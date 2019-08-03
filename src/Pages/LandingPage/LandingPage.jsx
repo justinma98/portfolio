@@ -8,7 +8,7 @@ const landingPage = () => {
     <div>
       <div className="background"/>
       <div id="windowWrapper" className="windowWrapper" />
-      <IconContainer icons={DESKTOP} direction="column" length={5} />
+      <IconContainer icons={DESKTOP} direction="column" length={0} />
     </div>
   );
 };

@@ -12,13 +12,7 @@ const icon = props => {
     setWindowDOM(document.getElementById("windowWrapper"));
     switch (props.id) {
       case "desktop_readme":
-        setTimeout(openWindow, 600);
-        break;
-      case "desktop_me":
         setTimeout(openWindow, 300);
-        break;
-      case "desktop_dev":
-        setTimeout(openWindow, 0);
         break;
     }
   }, []);

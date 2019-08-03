@@ -4,16 +4,12 @@ import "./IconContainer.scss";
 import { ICON } from "../../constants";
 
 const iconContainer = props => {
-  const { direction, length, icons } = props;
-
-  const toPx = n => {
-    return n.toString() + "px";
-  };
+  const { direction, icons } = props;
 
   const getStyle = () => {
     return direction === "row"
-      ? { flexDirection: direction, width: toPx(ICON.WIDTH * length) }
-      : { flexDirection: direction, height: toPx(ICON.HEIGHT * length) };
+      ? { flexDirection: direction, width: "100%" }
+      : { flexDirection: direction, height: "100%" };
   };
 
   return (
