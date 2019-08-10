@@ -35,13 +35,11 @@ const ME = [
     content: (
       <div>
         <img className={FILE_TYPE.PDF} alt="resume" src={resume} />
-        <div className="downloadScreen">
-          <a
-            className="downloadIcon"
-            href="/static/media/Justin_Ma.5f2841f1.pdf"
-            download
-          />
-        </div>
+        <a
+          className="downloadIcon"
+          href="/static/media/Justin_Ma.5f2841f1.pdf"
+          download
+        />
       </div>
     )
   }
