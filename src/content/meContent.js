@@ -1,11 +1,6 @@
 import React from "react";
 import { FILE_TYPE } from "../constants";
-import { Document, Page, pdfjs } from "react-pdf";
-import resume from "../assets/files/JustinMa.pdf";
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
-  pdfjs.version
-}/pdf.worker.js`;
+import resume from "../assets/files/Justin_Ma.svg";
 
 const me1 = require("../assets/pictures/background.jpg");
 
@@ -24,7 +19,7 @@ const ME = [
   },
   {
     id: "me_pic1",
-    pos: { x: 250, y: 150 },
+    pos: { x: -250, y: 150 },
     title: "IMG_0617.jpg",
     type: FILE_TYPE.PICTURE,
     source: me1,
@@ -32,15 +27,12 @@ const ME = [
   },
   {
     id: "me_resume",
-    pos: { x: 250, y: 150 },
-    title: "IMG_0617.jpg",
+    pos: { x: -400, y: 80 },
+    size: { x: 600, y: 350 },
+    title: "Resume.pdf",
     type: FILE_TYPE.PDF,
-    source: me1,
-    content: (
-      <Document className={FILE_TYPE.PDF} file={resume}>
-        <Page pageNumber={1} />
-      </Document>
-    )
+    source: resume,
+    content: <img className={FILE_TYPE.PDF} alt="resume" src={resume} />
   }
 ];
 

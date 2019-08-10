@@ -84,6 +84,18 @@
       max-height: 100%;
     }
 
+    &.-pdf {
+      overflow: scroll;
+      overflow-x: hidden;
+      background-color: white;
+    }
+
+    .pdf {
+      min-width: 500px;
+      max-width: 100%;
+      width: 1200px;
+    }
+
     .video {
       width: 800px;
       height: 500px;
@@ -92,12 +104,7 @@
     &.-folder {
       background-color: white;
       overflow: scroll;
-    }
-
-    &.-pdf {
-      background-color: black;
-      overflow: scroll;
-    }
+    }    
   }
 
   &__scaleIcon {
