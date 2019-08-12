@@ -1,5 +1,6 @@
 import React from "react";
 import IconContainer from "../components/IconContainer/IconContainer";
+import InfoCard from "../components/InfoCard/InfoCard";
 import Typer from "../components/Typer/Typer";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
@@ -38,8 +39,14 @@ const DESKTOP = [
     size: { x: 400, y: 200 },
     pos: { x: -300, y: 200 },
     title: "Dev Projects",
-    type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={4} icons={DEV} />
+    type: FILE_TYPE.TEXT,
+    content: (
+      <div className={FILE_TYPE.TEXT}>
+        <h3>Dev Projects</h3>
+        <InfoCard src="https://www.w3schools.com/w3css/img_lights.jpg" title="This is title" description="This is a description. This is a description. This is a description."/>
+        <InfoCard src="https://www.w3schools.com/w3css/img_lights.jpg" title="This is another title" description="This description. d is a deddddddddscription. This is a description."/>
+      </div>
+    )
   },
   {
     id: "desktop_photos",

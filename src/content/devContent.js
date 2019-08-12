@@ -22,7 +22,14 @@ const DEV = [
     size: { x: 200, y: 250 },
     pos: { x: 250, y: 150 },
     title: "Northern yea.jpg",
-    type: FILE_TYPE.FOLDER
+    type: FILE_TYPE.PICTURE,
+    source: "https://www.w3schools.com/w3css/img_lights.jpg",
+    content: (
+      <iframe
+        className={FILE_TYPE.PICTURE}
+        src="https://justinma98.github.io/secret/"
+      />
+    )
   },
   {
     id: "test3",

@@ -7,7 +7,7 @@ const me1 = require("../assets/pictures/background.jpg");
 const ME = [
   {
     id: "me_text",
-    size: { x: 400, y: 200 },
+    size: { x: -400, y: 200 },
     pos: { x: 200, y: 100 },
     title: "About_Me.txt",
     type: FILE_TYPE.TEXT,
@@ -18,14 +18,6 @@ const ME = [
     )
   },
   {
-    id: "me_pic1",
-    pos: { x: -250, y: 150 },
-    title: "IMG_0617.jpg",
-    type: FILE_TYPE.PICTURE,
-    source: me1,
-    content: <img className={FILE_TYPE.PICTURE} alt="me_pic1" src={me1} />
-  },
-  {
     id: "me_resume",
     pos: { x: -400, y: 80 },
     size: { x: 600, y: 350 },
@@ -34,7 +26,7 @@ const ME = [
     source: resume,
     content: (
       <div>
-        <img className={FILE_TYPE.PDF} alt="resume" src={resume} />
+        <img className={FILE_TYPE.VIDEO} alt="resume" src={resume} />
         <a
           className="downloadIcon"
           href="/static/media/Justin_Ma.5f2841f1.pdf"

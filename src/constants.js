@@ -1,8 +1,10 @@
 export const FILE_TYPE = {
   PICTURE: "picture",
+  VIDEO: "video",
   FOLDER: "folder",
   TEXT: "text",
-  PDF: "pdf"
+  PDF: "pdf",
+  WEB: "web"
 };
 
 export const ICON = {
