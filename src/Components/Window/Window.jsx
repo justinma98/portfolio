@@ -5,7 +5,7 @@ import { WINDOW } from "../../constants";
 
 const window = props => {
   const [size, setSize] = useState({ x: 0, y: 0 });
-  const [pos, setPos] = useState(props.pos);
+  const [pos, setPos] = useState({ x: 0, y: -50 });
   const [ease, setEase] = useState("all 0.3s ease-out");
   const [zIndex, setZIndex] = useState(0);
   const [opacity, setOpacity] = useState(0);
@@ -71,13 +71,14 @@ const window = props => {
   const closeWindowHelper = () => {
     setOpacity(0);
     setEase("all 0.3s ease-out");
-    setPos(props.pos);
+    setPos({ x: 0, y: -50 });
     close();
   };
 
   const openWindow = () => {
     setOpacity(1);
     setSize(props.size);
+    setPos(props.pos);
     setTimeout(openWindowHelper, 280);
   };
 
