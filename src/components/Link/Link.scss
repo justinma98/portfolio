@@ -1,0 +1,15 @@
+.link {
+
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px;
+  background-image: url("../../assets/sprites/link-icon.svg");
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

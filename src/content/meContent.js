@@ -26,7 +26,7 @@ const ME = [
     source: resume,
     content: (
       <div>
-        <img className={FILE_TYPE.VIDEO} alt="resume" src={resume} />
+        <img className={FILE_TYPE.PDF} alt="resume" src={resume} />
         <a
           className="downloadIcon"
           href="/static/media/Justin_Ma.5f2841f1.pdf"

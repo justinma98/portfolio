@@ -3,11 +3,35 @@
   margin-bottom: 20px;
 
   &__pictureWrapper {
+    position: relative;
     flex-basis: 60%;
+    overflow: hidden;
   }
 
   &__picture {
     width: 100%;
+    min-width: 200px;
+  }
+
+  &__links {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+
+  &__github {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/sprites/github-icon.svg");
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__info {

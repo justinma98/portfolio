@@ -1,49 +1,43 @@
 import React from "react";
+import IconContainer from "../components/IconContainer/IconContainer";
 import { FILE_TYPE } from "../constants";
 
 const DEV = [
   {
-    id: "test1",
-    size: { x: 400, y: 200 },
-    pos: { x: 200, y: 100 },
-    title: "Northern Lights.jpg",
-    type: FILE_TYPE.PICTURE,
-    source: "https://www.w3schools.com/w3css/img_lights.jpg",
-    content: (
-      <img
-        className={FILE_TYPE.PICTURE}
-        alt="northern lights"
-        src="https://www.w3schools.com/w3css/img_lights.jpg"
-      />
-    )
+    id: "dev_1",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    windowTitle: "Photography",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={3} icons={[]} />,
+    src: "https://www.w3schools.com/w3css/img_lights.jpg",
+    title: "Virtual Rooms",
+    description: "this is virtual rooms",
+    link: true,
+    github: "https://github.com/justinma98/snackapp"
   },
   {
-    id: "test2",
-    size: { x: 200, y: 250 },
-    pos: { x: 250, y: 150 },
-    title: "Northern yea.jpg",
-    type: FILE_TYPE.PICTURE,
-    source: "https://www.w3schools.com/w3css/img_lights.jpg",
-    content: (
-      <iframe
-        className={FILE_TYPE.PICTURE}
-        src="https://justinma98.github.io/secret/"
-      />
-    )
+    id: "dev_2",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    windowTitle: "Photography",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={3} icons={[]} />,
+    src: "https://www.w3schools.com/w3css/img_lights.jpg",
+    title: "Virtual Rooms 2",
+    description: "this is virtual rooms 2",
+    github: "https://github.com/justinma98/snackapp"
   },
   {
-    id: "test3",
-    size: { x: 450, y: 300 },
-    pos: { x: 300, y: 200 },
-    title: "Northern okay.jpg",
-    type: FILE_TYPE.PICTURE
-  },
-  {
-    id: "test4",
-    size: { x: 300, y: 200 },
-    pos: { x: 150, y: 250 },
-    title: "woah Lights.jpg",
-    type: FILE_TYPE.PICTURE
+    id: "dev_3",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    windowTitle: "Photography",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={3} icons={[]} />,
+    src: "https://www.w3schools.com/w3css/img_lights.jpg",
+    title: "Virtual Rooms 3",
+    description: "this is virtual rooms 3"
   }
 ];
 
