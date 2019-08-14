@@ -62,7 +62,7 @@
     border-top: 0;
     overflow: hidden;
 
-    &.-text {
+    &.-text, &.-explorer {
       background-color: white;
       overflow: scroll;
       overflow-x: hidden;
@@ -70,6 +70,12 @@
 
     .text {
       padding: 20px;
+      hyphens: auto;
+    }
+
+    .explorer {
+      padding: 20px;
+      padding-top: 30px;
       hyphens: auto;
     }
 

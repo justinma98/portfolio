@@ -1,6 +1,7 @@
 import React from "react";
-import "./InfoCard.scss";
 import Link from "../Link/Link";
+import "./InfoCard.scss";
+import "../Link/Link.scss";
 
 const iconContainer = props => {
   const { title, description, src, link, github } = props;
@@ -10,12 +11,22 @@ const iconContainer = props => {
     if (win) win.focus();
   };
 
+  let linkCmpt;
+  switch(typeof link){
+    case "boolean":
+      linkCmpt = <Link {...props} title={props.windowTitle} />
+      break;
+    case "string":
+      linkCmpt = <div className="link" onClick={() => openLink(link)}/>
+      break;
+  }
+
   return (
     <div className="infoCard">
       <div className="infoCard__pictureWrapper">
-        <img className="infoCard__picture" alt="northern lights" src={src} />
+        <img className="infoCard__picture" alt="northern lights" src={src} ></img>
         <div className="infoCard__links">
-          {link ? <Link {...props} title={props.windowTitle} /> : null}
+          {linkCmpt}
           {github ? (
             <div
               className="infoCard__github"
@@ -32,6 +43,6 @@ const iconContainer = props => {
   );
 };
 
-iconContainer.defaultProps = { link: false, github: null };
+iconContainer.defaultProps = { link: null, github: null };
 
 export default iconContainer;

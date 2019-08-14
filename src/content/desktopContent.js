@@ -40,9 +40,9 @@ const DESKTOP = [
     size: { x: 400, y: 200 },
     pos: { x: -300, y: 200 },
     title: "Dev Projects",
-    type: FILE_TYPE.TEXT,
+    type: FILE_TYPE.EXPLORER,
     content: (
-      <div className={FILE_TYPE.TEXT}>
+      <div className={FILE_TYPE.EXPLORER}>
         <Toolbar url="localhost:3000" />
         <h3>Dev Projects</h3>
         {DEV.map(e => (

@@ -4,7 +4,7 @@ export const FILE_TYPE = {
   FOLDER: "folder",
   TEXT: "text",
   PDF: "pdf",
-  WEB: "web"
+  EXPLORER: "explorer"
 };
 
 export const ICON = {

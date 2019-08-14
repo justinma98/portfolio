@@ -1,43 +1,58 @@
 import React from "react";
-import IconContainer from "../components/IconContainer/IconContainer";
-import { FILE_TYPE } from "../constants";
+
+const bruinhub_pic = require("../assets/pictures/bruinhub.gif");
+const color_pic = require("../assets/pictures/color.gif");
+const pavve_pic = require("../assets/pictures/pavve.gif");
 
 const DEV = [
   {
-    id: "dev_1",
-    size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
-    windowTitle: "Photography",
-    type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={3} icons={[]} />,
-    src: "https://www.w3schools.com/w3css/img_lights.jpg",
-    title: "Virtual Rooms",
-    description: "this is virtual rooms",
-    link: true,
-    github: "https://github.com/justinma98/snackapp"
+    title: "BruinHub",
+    src: bruinhub_pic,
+    description: (
+      <div>
+        <p>A web app for planning and recommending classes for UCLA students</p>
+        <p>
+          Built frontend in React and integrated Redux to achieve a persistent
+          state across pages. Implemented a fluid drag and drop functionality
+          for adding classes into the calendar.
+        </p>
+      </div>
+    ),
+    github: "https://github.com/ucladevx/Aphrodite"
   },
   {
-    id: "dev_2",
-    size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
-    windowTitle: "Photography",
-    type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={3} icons={[]} />,
-    src: "https://www.w3schools.com/w3css/img_lights.jpg",
-    title: "Virtual Rooms 2",
-    description: "this is virtual rooms 2",
-    github: "https://github.com/justinma98/snackapp"
+    src: color_pic,
+    link: "https://styvone.github.io/color/",
+    title: "Color",
+    description: (
+      <div>
+        <p>
+          A drawing web app that generates musical notes using pattern
+          recognition
+        </p>
+        <p>
+          Built in frontend React and created a history data structure for
+          undoing and redoing brush strokes. Implemented an algorithm for
+          generating paintbrush strokes based on mouse velocity.
+        </p>
+      </div>
+    ),
+    github: "https://github.com/UCLA-Creative-Labs/color"
   },
   {
-    id: "dev_3",
-    size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
-    windowTitle: "Photography",
-    type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={3} icons={[]} />,
-    src: "https://www.w3schools.com/w3css/img_lights.jpg",
-    title: "Virtual Rooms 3",
-    description: "this is virtual rooms 3"
+    src: pavve_pic,
+    link: "https://justinma98.github.io/pavve/",
+    title: "Pavve",
+    description: (
+      <div>
+        <p>
+          An endless mini game where the game environment is generated from the
+          mouse's path
+        </p>
+        <p>Built in React.</p>
+      </div>
+    ),
+    github: "https://github.com/justinma98/pavve"
   }
 ];
 
