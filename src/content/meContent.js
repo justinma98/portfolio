@@ -11,7 +11,8 @@ const ME = [
     type: FILE_TYPE.TEXT,
     content: (
       <div className={FILE_TYPE.TEXT}>
-        <h1>About me...</h1>
+        <p>My name is Justin</p>
+        <p>My name is Justin</p>
       </div>
     )
   },
@@ -30,6 +31,28 @@ const ME = [
           href="/static/media/Justin_Ma.5f2841f1.pdf"
           download
         />
+      </div>
+    )
+  },
+  {
+    id: "me_novel",
+    size: { x: 400, y: 200 },
+    pos: { x: 0, y: 130 },
+    title: "novel_first_draft.txt",
+    type: FILE_TYPE.TEXT,
+    content: (
+      <div className={FILE_TYPE.TEXT}>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>All work and no play makes Justin a dull boy.</p>
+        <p>
+          All work and no play makes Justin a dull boy. All work and no play
+          makes Justin a dull boy. All work and no play makes Justin a dull
+          boy.All work and no play makes Justin a dull boy.
+        </p>
       </div>
     )
   }

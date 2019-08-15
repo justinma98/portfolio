@@ -37,7 +37,7 @@ const DESKTOP = [
   },
   {
     id: "desktop_dev",
-    size: { x: 400, y: 200 },
+    size: { x: 700, y: 400 },
     pos: { x: -300, y: 200 },
     title: "Dev Projects",
     type: FILE_TYPE.EXPLORER,
