@@ -6,6 +6,7 @@ const bruinhub_pic = require("../assets/pictures/bruinhub.gif");
 const snackapp_pic = require("../assets/pictures/snackapp.gif");
 const realitysim_pic = require("../assets/pictures/realitysim.gif");
 const color_pic = require("../assets/pictures/color.gif");
+const spaceexp_pic = require("../assets/pictures/spaceexp.gif")
 const pavve_pic = require("../assets/pictures/pavve.gif");
 
 const DEV = [
@@ -72,31 +73,32 @@ const DEV = [
     github: "https://github.com/justinma98/snackapp"
   },
   {
-    id: "dev_realitysim",
-    pos: { x: -300, y: 200 },
-    windowTitle: "The_Reality_Simulator.mp4",
+    id: "dev_spaceexp",
+    pos: { x: -200, y: 200 },
+    windowTitle: "Space_Expiration.mp4",
     type: FILE_TYPE.VIDEO,
     content: (
       <iframe
         className={FILE_TYPE.VIDEO}
-        src="https://www.youtube.com/embed/9zxBU82pECw"
+        src="https://www.youtube.com/embed/lgOhS3oxDA8"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
     ),
-    title: "The Reality Simulator",
+    title: "Space Expiration",
     link: true,
-    src: realitysim_pic,
+    src: spaceexp_pic,
     description: (
       <div>
         <p>
-          An environment visualizer that takes in temperature, light, and sound
-          readings from an arduino sensor and generates an artistic VR
-          environemnt
+          A mobile bluetooth multiplayer game where up to 4 players work
+          together to collect resources in space while avoiding the cosmic worm
+          of doom.
         </p>
         <p>
-          Built in Unity and ported to Oculus Rift.
+          Built in Unity. Implemented joystick movement for ships. Created enemy
+          attack algorithm based on multiple data points.
         </p>
       </div>
     )

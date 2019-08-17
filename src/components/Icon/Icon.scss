@@ -28,6 +28,10 @@
       background-image: url("../../assets/sprites/explorer-icon.svg");
     }
 
+    &.-recycle {
+      background-image: url("../../assets/sprites/recycle-icon.svg");
+    }
+
     .custom {
       display: inline-block;
       max-width: 90%;
@@ -42,6 +46,8 @@
     font-size: 14px;
     text-align: center;
     top: 65px;
+    width: 84px;
+    overflow-wrap: break-word;
 
     &.-desktop {
       font-weight: bold;

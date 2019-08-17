@@ -6,8 +6,17 @@ import Toolbar from "../components/Toolbar/Toolbar";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
 import ME from "./meContent";
+import RECYCLE from "./recycleContent";
 
 const DESKTOP = [
+  {
+    id: "desktop_recycle",
+    size: { x: 500, y: 300 },
+    pos: { x: -250, y: 220 },
+    title: "Recycling Bin",
+    type: FILE_TYPE.RECYCLE,
+    content: <IconContainer direction="row" icons={RECYCLE} />
+  },
   {
     id: "desktop_readme",
     size: { x: 400, y: 260 },

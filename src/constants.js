@@ -4,7 +4,8 @@ export const FILE_TYPE = {
   FOLDER: "folder",
   TEXT: "text",
   PDF: "pdf",
-  EXPLORER: "explorer"
+  EXPLORER: "explorer",
+  RECYCLE: "recycle"
 };
 
 export const ICON = {
