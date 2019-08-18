@@ -134,7 +134,9 @@
       width: 1200px;
     }
 
-    &.-folder, &.-recycle {
+    &.-folder,
+    &.-recycle,
+    &.-computer {
       background-color: white;
       overflow: scroll;
     }

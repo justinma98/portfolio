@@ -93,9 +93,9 @@ export const DESKTOP = [
       <iframe
         className="video"
         src="https://www.youtube.com/embed/IzTYggOUDX8"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
     )
   }

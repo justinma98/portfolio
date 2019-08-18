@@ -5,7 +5,8 @@ export const FILE_TYPE = {
   TEXT: "text",
   PDF: "pdf",
   EXPLORER: "explorer",
-  RECYCLE: "recycle"
+  RECYCLE: "recycle",
+  COMPUTER: "computer"
 };
 
 export const ICON = {

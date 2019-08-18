@@ -8,7 +8,7 @@ const toolbar = props => {
       <div className="toolbar__button -forward" />
       <div className="toolbar__button -refresh" />
       <div className="toolbar__search">
-        <div className="toolbar__url" contentEditable spellcheck="false">{props.url}</div>
+        <div className="toolbar__url" contentEditable spellCheck="false">{props.url}</div>
       </div>
     </div>
   );

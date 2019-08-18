@@ -32,11 +32,36 @@
       background-image: url("../../assets/sprites/recycle-icon.svg");
     }
 
-    .custom {
+    &.-computer {
+      background-image: url("../../assets/sprites/computer-icon.svg");
+    }
+
+    .custom, .multi {
       display: inline-block;
       max-width: 90%;
       max-height: 90%;
       border: 2px solid blue;
+    }
+
+    .multi {
+      position: absolute;
+      max-width: 70%;
+      max-height: 70%;
+
+      &.-p1 {
+        bottom: 0px;
+        left: 0px;
+      }
+
+      &.-p2 {
+        top: 7px;
+        right: 7px;
+      }
+
+      &.-p3 {
+        top: 0px;
+        right: 0px;
+      }
     }
   }
 

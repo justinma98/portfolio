@@ -17,7 +17,7 @@ const icon = props => {
     }
   }, []);
 
-  let { id, title, type, source } = props;
+  let { id, title, type, source, multiSource } = props;
   let lastClick = 0;
   let titleClasses = ["icon__title"];
 
@@ -44,12 +44,25 @@ const icon = props => {
     titleClasses.push("-desktop");
   }
 
+  const renderIcon = () => {
+    if (source) {
+      return <img className="custom" alt="thumbnail" src={source} />;
+    }
+    if (multiSource) {
+      return (
+        <div>
+          <img className="multi -p3" alt="thumbnail" src={multiSource[2]} />
+          <img className="multi -p2" alt="thumbnail" src={multiSource[1]} />
+          <img className="multi -p1" alt="thumbnail" src={multiSource[0]} />
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="icon" onClick={handleClick}>
       <div className={"icon__thumbnail -" + type}>
-        {source ? (
-          <img className="custom" alt="thumbnail" src={source} />
-        ) : null}
+        {renderIcon()}
       </div>
       <div className={titleClasses.join(" ")}>{title}</div>
       {windowDOM

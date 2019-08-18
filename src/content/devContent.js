@@ -19,9 +19,9 @@ const DEV = [
       <iframe
         className={FILE_TYPE.VIDEO}
         src="https://www.youtube.com/embed/d1zuhlXSpjo"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
     ),
     title: "Virtual Rooms",
@@ -81,9 +81,9 @@ const DEV = [
       <iframe
         className={FILE_TYPE.VIDEO}
         src="https://www.youtube.com/embed/lgOhS3oxDA8"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
     ),
     title: "Space Expiration",
