@@ -1,7 +1,6 @@
 import React from "react";
 import Icon from "../Icon/Icon";
 import "./IconContainer.scss";
-import { ICON } from "../../constants";
 
 const iconContainer = props => {
   const { direction, icons } = props;

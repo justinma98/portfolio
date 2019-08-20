@@ -18,25 +18,6 @@ const me6 = require("../assets/pictures/me6.jpg");
 
 const DESKTOP = [
   {
-    id: "desktop_test",
-    size: { x: 500, y: 300 },
-    pos: { x: -200, y: 60 },
-    title: "Photos",
-    type: FILE_TYPE.PICTURE_CONTAINER,
-    multiSource: [me1, me2, me3],
-    content: (
-      <PictureContainer pictures={[me1, me2, me3, me4, me5, me6]}/>
-    )
-  },
-  {
-    id: "desktop_recycle",
-    size: { x: 500, y: 300 },
-    pos: { x: -250, y: 220 },
-    title: "Recycling Bin",
-    type: FILE_TYPE.RECYCLE,
-    content: <IconContainer direction="row" icons={RECYCLE} />
-  },
-  {
     id: "desktop_me",
     size: { x: 460, y: 340 },
     pos: { x: -200, y: 160 },
@@ -61,12 +42,47 @@ const DESKTOP = [
     )
   },
   {
+    id: "desktop_design",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    title: "Graphic design is my passion",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={4} icons={[]} />
+  },
+  {
     id: "desktop_photos",
     size: { x: 350, y: 250 },
     pos: { x: -190, y: 240 },
     title: "Photography",
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" length={3} icons={[]} />
+  },
+  {
+    id: "desktop_art",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    title: "Art",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={3} icons={[]} />
+  },
+  {
+    id: "desktop_movies",
+    size: { x: 350, y: 250 },
+    pos: { x: -190, y: 240 },
+    title: "Movies",
+    type: FILE_TYPE.FOLDER,
+    content: <IconContainer direction="row" length={3} icons={[]} />
+  },
+  {
+    id: "desktop_test_2",
+    size: { x: 600, y: 300 },
+    pos: { x: -100, y: 160 },
+    title: "Photos",
+    type: FILE_TYPE.PICTURE_CONTAINER,
+    multiSource: [me1, me2, me3],
+    content: (
+      <PictureContainer pictures={[me1, me2, me3, me4, me5, me6]}/>
+    )
   },
   {
     id: "desktop_readme",
