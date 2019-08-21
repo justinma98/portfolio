@@ -80,9 +80,7 @@ const DESKTOP = [
     title: "Photos",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [me1, me2, me3],
-    content: (
-      <PictureContainer pictures={[me1, me2, me3, me4, me5, me6]}/>
-    )
+    content: <PictureContainer pictures={[me1, me2, me3, me4, me5, me6]} />
   },
   {
     id: "desktop_readme",

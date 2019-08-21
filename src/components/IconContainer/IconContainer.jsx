@@ -3,7 +3,7 @@ import Icon from "../Icon/Icon";
 import "./IconContainer.scss";
 
 const iconContainer = props => {
-  const { direction, icons } = props;
+  const { direction, icons, loading } = props;
 
   const getStyle = () => {
     return direction === "row"
@@ -14,7 +14,7 @@ const iconContainer = props => {
   return (
     <div className="iconWrapper" style={getStyle()}>
       {icons.map(icon => (
-        <Icon key={icon.id} {...icon} />
+        <Icon key={icon.id} {...icon} loading={loading} />
       ))}
     </div>
   );

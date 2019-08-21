@@ -20,3 +20,5 @@ export const WINDOW = {
   MIN_WIDTH: 160,
   MIN_HEIGHT: 80
 }
+
+export const NUM_WINDOWS = 18;

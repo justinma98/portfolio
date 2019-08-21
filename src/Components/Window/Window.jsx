@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Window.scss";
-import { selectWindow } from "../../utils";
+import { selectWindow, windowComplete } from "../../utils";
 import { WINDOW } from "../../constants";
 
 const window = props => {
-  const [size, setSize] = useState({ x: 0, y: 0 });
-  const [pos, setPos] = useState({ x: 0, y: -50 });
+  const [size, setSize] = useState(props.size);
+  const [pos, setPos] = useState(props.pos);
   const [ease, setEase] = useState("all 0.3s ease-out");
   const [zIndex, setZIndex] = useState(0);
-  const [opacity, setOpacity] = useState(0);
+  const [opacity, setOpacity] = useState(1);
 
   let { id, type, title, content, close, open } = props;
   let offset = { x: 0, y: 0 };
@@ -17,6 +17,13 @@ const window = props => {
   useEffect(() => {
     if (open) openWindow();
   }, [open]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      closeWindow();
+      windowComplete();
+    }, 400);
+  }, []);
 
   const onMouseDown = (e, drag) => {
     mySelectWindow(e);

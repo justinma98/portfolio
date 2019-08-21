@@ -10,12 +10,15 @@ const icon = props => {
 
   useEffect(() => {
     setWindowDOM(document.getElementById("windowSpawn"));
+  }, []);
+
+  useEffect(() => {
     switch (props.id) {
       case "desktop_readme":
-        setTimeout(openWindow, 300);
+        setTimeout(openWindow, 500);
         break;
     }
-  }, []);
+  }, [props.loading])
 
   let { id, title, type, source, multiSource } = props;
   let lastClick = 0;
