@@ -1,13 +1,13 @@
 import React from "react";
 import { FILE_TYPE } from "../constants";
 
-const virtualrooms_pic = require("../assets/pictures/virtualrooms.gif");
-const bruinhub_pic = require("../assets/pictures/bruinhub.gif");
-const snackapp_pic = require("../assets/pictures/snackapp.gif");
-const realitysim_pic = require("../assets/pictures/realitysim.gif");
-const color_pic = require("../assets/pictures/color.gif");
-const spaceexp_pic = require("../assets/pictures/spaceexp.gif")
-const pavve_pic = require("../assets/pictures/pavve.gif");
+const virtualrooms_pic = require("../assets/pictures/dev/virtualrooms.gif");
+const bruinhub_pic = require("../assets/pictures/dev/bruinhub.gif");
+const snackapp_pic = require("../assets/pictures/dev/snackapp.gif");
+const realitysim_pic = require("../assets/pictures/dev/realitysim.gif");
+const color_pic = require("../assets/pictures/dev/color.gif");
+const spaceexp_pic = require("../assets/pictures/dev/spaceexp.gif");
+const pavve_pic = require("../assets/pictures/dev/pavve.gif");
 
 const DEV = [
   {
@@ -71,6 +71,34 @@ const DEV = [
       </div>
     ),
     github: "https://github.com/justinma98/snackapp"
+  },
+  {
+    id: "dev_realsim",
+    pos: { x: -300, y: 200 },
+    windowTitle: "The_Reality_Simulator.mp4",
+    type: FILE_TYPE.VIDEO,
+    content: (
+      <iframe
+        className={FILE_TYPE.VIDEO}
+        src="https://www.youtube.com/embed/9zxBU82pECw"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    ),
+    title: "The Reality Simulator",
+    link: true,
+    src: realitysim_pic,
+    description: (
+      <div>
+        <p>
+          An artistic environment visualizer. Takes in live readings from
+          arduino temperature, brightness, and sound sensors. Generates a VR
+          game environment based on data points. Ported to Oculus Rift.
+        </p>
+        <p>Built in Unity. Designed and developed VR environmnt.</p>
+      </div>
+    )
   },
   {
     id: "dev_spaceexp",

@@ -7,7 +7,7 @@ import PictureContainer from "../components/PictureContainer/PictureContainer";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
 import ME from "./meContent";
-import RECYCLE from "./recycleContent";
+import DESIGN from "./designContent";
 
 const me1 = require("../assets/pictures/me1.jpg");
 const me2 = require("../assets/pictures/me2.jpg");
@@ -47,7 +47,7 @@ const DESKTOP = [
     pos: { x: -190, y: 240 },
     title: "Graphic design is my passion",
     type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={4} icons={[]} />
+    content: <IconContainer direction="row" icons={DESIGN} />
   },
   {
     id: "desktop_photos",
