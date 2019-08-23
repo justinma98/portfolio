@@ -4,12 +4,27 @@ import { FILE_TYPE } from "../constants";
 const virtualrooms_pic = require("../assets/pictures/dev/virtualrooms.gif");
 const bruinhub_pic = require("../assets/pictures/dev/bruinhub.gif");
 const snackapp_pic = require("../assets/pictures/dev/snackapp.gif");
+const datesim_pic = require("../assets/pictures/dev/datesim.gif");
 const realitysim_pic = require("../assets/pictures/dev/realitysim.gif");
 const color_pic = require("../assets/pictures/dev/color.gif");
 const spaceexp_pic = require("../assets/pictures/dev/spaceexp.gif");
 const pavve_pic = require("../assets/pictures/dev/pavve.gif");
 
 const DEV = [
+  {
+    title: "Desktop Sim",
+    description: (
+      <div>
+        <p>A desktop simulator with interactable windows.</p>
+        <p>
+          Built in React. Adopted functional components with hooks to replace
+          class components. Integrated React portals to render window
+          components. Implemented scalable, draggable, and closable windows.
+        </p>
+      </div>
+    ),
+    github: "https://github.com/justinma98/portfolio"
+  },
   {
     id: "dev_vr",
     pos: { x: -400, y: 230 },
@@ -149,6 +164,20 @@ const DEV = [
       </div>
     ),
     github: "https://github.com/UCLA-Creative-Labs/color"
+  },
+  {
+    src: datesim_pic,
+    title: "Dating Sim",
+    description: (
+      <div>
+        <p>A 30 minute dating simulator game.</p>
+        <p>
+          Built in React. Created a tree data structure that stores scene
+          information for the player to traverse. Implemented a speed typing
+          mini game which records the user's words per minute.
+        </p>
+      </div>
+    )
   },
   {
     src: pavve_pic,

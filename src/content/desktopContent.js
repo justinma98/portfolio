@@ -78,12 +78,10 @@ const DESKTOP = [
     content: (
       <TyperContainer className={FILE_TYPE.TEXT}>
         <Typer delay={300} phrase="Hello!" />
-        <br />
         <Typer
           delay={1100}
           phrase="My name's Justin Ma               and this is a portfolio of my creative       and coding work."
         />
-        <br />
         <Typer delay={4700} phrase="Click around to explore:)" />
       </TyperContainer>
     )

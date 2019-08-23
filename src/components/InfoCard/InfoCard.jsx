@@ -24,7 +24,7 @@ const iconContainer = props => {
   return (
     <div className="infoCard">
       <div className="infoCard__pictureWrapper">
-        <img className="infoCard__picture" alt="northern lights" src={src} ></img>
+        <img className="infoCard__picture" alt="dev project picture" src={src} ></img>
         <div className="infoCard__links">
           {linkCmpt}
           {github ? (

@@ -15,7 +15,7 @@ const typer = props => {
       setTimeout(() => type(), speed);
     }
   };
-  return <div className="typer">{phrase.slice(0, pos)}</div>;
+  return <p className="typer">{phrase.slice(0, pos)}</p>;
 };
 
 export default typer;

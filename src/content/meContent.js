@@ -13,8 +13,27 @@ const ME = [
     type: FILE_TYPE.TEXT,
     content: (
       <div className={FILE_TYPE.TEXT}>
-        <p>My name is Justin</p>
-        <p>My name is Justin</p>
+        <p>
+          Art and code are my two favorite things, which is great beacuse I love
+          creatings things. From websites to games to short films to tshirts.
+        </p>
+        <p>
+          I'm currently a 4th year student studying Computer Science at UCLA.
+        </p>
+        <p>
+          <a href="/static/media/Justin_Ma.5f2841f1.pdf" download>
+            Resume
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/justinma98/">LinkedIn</a>
+        </p>
+        <p>
+          <a href="https://github.com/justinma98">GitHub</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/_justma/">Instagram</a>
+        </p>
       </div>
     )
   },
@@ -44,7 +63,7 @@ const ME = [
     type: FILE_TYPE.PICTURE,
     source: me_photo,
     content: <img className={FILE_TYPE.PICTURE} alt="me" src={me_photo} />
-  },
+  }
 ];
 
 export default ME;
