@@ -69,8 +69,8 @@ const p18_27 = require("../assets/pictures/photos/2018/27.jpg");
 const PHOTOS = [
   {
     id: "photos_2017",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 400, y: 300 },
+    pos: { x: -200, y: 70 },
     title: "2017",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [p17_1_t, p17_2_t, p17_3_t],
@@ -110,8 +110,8 @@ const PHOTOS = [
   },
   {
     id: "photos_2018",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 400, y: 300 },
+    pos: { x: -170, y: 100 },
     title: "2018",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [p18_1_t, p18_2_t, p18_3_t],

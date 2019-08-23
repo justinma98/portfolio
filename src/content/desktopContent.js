@@ -8,7 +8,8 @@ import DEV from "./devContent";
 import ME from "./meContent";
 import DESIGN from "./designContent";
 import ART from "./artContent";
-import PHOTOS from "./photosContent";
+import PHOTOS from "./photoContent";
+import MOVIES from "./movieContent";
 
 const DESKTOP = [
   {
@@ -37,8 +38,8 @@ const DESKTOP = [
   },
   {
     id: "desktop_design",
-    size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
+    size: { x: 400, y: 250 },
+    pos: { x: -370, y: 270 },
     title: "Graphic design is my passion",
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" icons={DESIGN} />
@@ -46,15 +47,15 @@ const DESKTOP = [
   {
     id: "desktop_photos",
     size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
+    pos: { x: -290, y: 240 },
     title: "Photography",
     type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={3} icons={PHOTOS} />
+    content: <IconContainer direction="row" icons={PHOTOS} />
   },
   {
     id: "desktop_art",
     size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
+    pos: { x: -270, y: 180 },
     title: "Art",
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" icons={ART} />
@@ -62,10 +63,10 @@ const DESKTOP = [
   {
     id: "desktop_movies",
     size: { x: 350, y: 250 },
-    pos: { x: -190, y: 240 },
+    pos: { x: 0, y: 240 },
     title: "Movies",
     type: FILE_TYPE.FOLDER,
-    content: <IconContainer direction="row" length={3} icons={[]} />
+    content: <IconContainer direction="row" icons={MOVIES} />
   },
   {
     id: "desktop_readme",

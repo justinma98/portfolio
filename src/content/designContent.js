@@ -45,8 +45,8 @@ const misc_5 = require("../assets/pictures/design/misc/misc_5.png");
 const DESIGN = [
   {
     id: "design_ucla",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 500, y: 400 },
+    pos: { x: -100, y: 100 },
     title: "UCLA",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [UCLA_0_t, UCLA_1_t, UCLA_2_t],
@@ -70,8 +70,8 @@ const DESIGN = [
   },
   {
     id: "design_shirt",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 500, y: 400 },
+    pos: { x: -80, y: 130 },
     title: "Tshirt designs",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [shirt_1_t, shirt_2_t, shirt_3_t],
@@ -93,8 +93,8 @@ const DESIGN = [
   },
   {
     id: "design_misc",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 340, y: 380 },
+    pos: { x: -60, y: 160 },
     title: "Misc",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [misc_1_t, misc_2_t, misc_3_t],

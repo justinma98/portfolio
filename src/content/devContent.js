@@ -12,7 +12,7 @@ const pavve_pic = require("../assets/pictures/dev/pavve.gif");
 const DEV = [
   {
     id: "dev_vr",
-    pos: { x: -300, y: 200 },
+    pos: { x: -400, y: 230 },
     windowTitle: "Virtual_Rooms.mp4",
     type: FILE_TYPE.VIDEO,
     content: (
@@ -74,7 +74,7 @@ const DEV = [
   },
   {
     id: "dev_realsim",
-    pos: { x: -300, y: 200 },
+    pos: { x: -120, y: 70 },
     windowTitle: "The_Reality_Simulator.mp4",
     type: FILE_TYPE.VIDEO,
     content: (
@@ -102,7 +102,7 @@ const DEV = [
   },
   {
     id: "dev_spaceexp",
-    pos: { x: -200, y: 200 },
+    pos: { x: -200, y: 210 },
     windowTitle: "Space_Expiration.mp4",
     type: FILE_TYPE.VIDEO,
     content: (

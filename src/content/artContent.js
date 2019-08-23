@@ -33,7 +33,7 @@ const draw_4 = require("../assets/pictures/art/draw/draw_4.jpg");
 const ART = [
   {
     id: "art_paint",
-    size: { x: 600, y: 300 },
+    size: { x: 350, y: 400 },
     pos: { x: -100, y: 160 },
     title: "Paintings",
     type: FILE_TYPE.PICTURE_CONTAINER,
@@ -61,8 +61,8 @@ const ART = [
   },
   {
     id: "art_draw",
-    size: { x: 600, y: 300 },
-    pos: { x: -100, y: 160 },
+    size: { x: 440, y: 320 },
+    pos: { x: -70, y: 190 },
     title: "Drawings",
     type: FILE_TYPE.PICTURE_CONTAINER,
     multiSource: [draw_1_t, draw_2_t, draw_3_t],
