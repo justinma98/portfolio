@@ -1,5 +1,5 @@
 import React from "react";
-import IconContainer from "../components/IconContainer/IconContainer";
+import IconContainer from "../components/Icon/IconContainer";
 import { FILE_TYPE } from "../constants";
 import {DEV} from "./devContent";
 

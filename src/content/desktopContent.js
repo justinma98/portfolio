@@ -1,7 +1,8 @@
 import React from "react";
-import IconContainer from "../components/IconContainer/IconContainer";
+import IconContainer from "../components/Icon/IconContainer";
 import InfoCard from "../components/InfoCard/InfoCard";
 import Typer from "../components/Typer/Typer";
+import TyperContainer from "../components/Typer/TyperContainer";
 import Toolbar from "../components/Toolbar/Toolbar";
 import { FILE_TYPE } from "../constants";
 import DEV from "./devContent";
@@ -75,16 +76,16 @@ const DESKTOP = [
     title: "README.md",
     type: FILE_TYPE.TEXT,
     content: (
-      <div className={FILE_TYPE.TEXT}>
-        <Typer delay={1600} phrase="Hello!" />
+      <TyperContainer className={FILE_TYPE.TEXT}>
+        <Typer delay={300} phrase="Hello!" />
         <br />
         <Typer
-          delay={2400}
+          delay={1100}
           phrase="My name's Justin Ma               and this is a portfolio of my creative       and coding work."
         />
         <br />
-        <Typer delay={6000} phrase="Click around to explore:)" />
-      </div>
+        <Typer delay={4700} phrase="Click around to explore:)" />
+      </TyperContainer>
     )
   }
 ];

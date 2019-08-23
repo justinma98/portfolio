@@ -4,7 +4,6 @@
   position: fixed;
   border-radius: 10px;
   font-family: "Inconsolata";
-  user-select: none;
   overflow: hidden;
   border: 2px solid blue;
   border-radius: 10px;
@@ -18,6 +17,7 @@
     color: white;
     text-align: center;
     line-height: 22px;
+    user-select: none;
   }
 
   &__button {
@@ -67,17 +67,18 @@
       background-color: white;
       overflow: scroll;
       overflow-x: hidden;
+      
+      user-select: auto;
     }
 
-    .text {
+    .text, .explorer {
       padding: 20px;
       hyphens: auto;
+      user-select: auto;
     }
 
     .explorer {
-      padding: 20px;
       padding-top: 30px;
-      hyphens: auto;
     }
 
     &.-picture {
