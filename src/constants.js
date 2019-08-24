@@ -21,4 +21,4 @@ export const WINDOW = {
   MIN_HEIGHT: 80
 }
 
-export const NUM_WINDOWS = 25;
+export const NUM_WINDOWS = 26;

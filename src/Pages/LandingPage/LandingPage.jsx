@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./LandingPage.scss";
 import IconContainer from "../../components/IconContainer/IconContainer";
 import Loading from "../../components/Loading/Loading";
@@ -6,9 +6,16 @@ import Icon from "../../components/Icon/Icon";
 import DESKTOP from "../../content/desktopContent";
 import { FILE_TYPE } from "../../constants";
 import RECYCLE from "../../content/recycleContent";
+import { windowComplete } from "../../utils";
 
 const landingPage = () => {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      windowComplete();
+    }, 400);
+  }, []);
 
   const loadingDone = () => {
     setLoading(false);
