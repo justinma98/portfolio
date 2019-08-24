@@ -8,12 +8,22 @@ const me_photo = require("../assets/pictures/background.jpg");
 const ME = [
   {
     id: "me_text",
-    size: { x: 400, y: 260 },
-    pos: { x: -260, y: 120 },
+    size: { x: 520, y: 360 },
+    pos: { x: -280, y: 190 },
     title: "About_Me.txt",
     type: FILE_TYPE.TEXT,
     content: (
       <div className={FILE_TYPE.TEXT}>
+        <p>
+          Programming and design are my two favorite things, which has worked
+          out nicely since many of my projects require a good bit of both. While
+          code builds functionality, art allows creativity. These two interests
+          have driven me into frontend development, where both skills are
+          relevant.
+        </p>
+        <p>
+          I'm currently a 4th year student studying Computer Science at UCLA.
+        </p>
         <p>
           <a href={resume_pdf} download>
             Resume

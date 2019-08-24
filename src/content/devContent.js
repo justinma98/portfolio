@@ -1,6 +1,7 @@
 import React from "react";
 import { FILE_TYPE } from "../constants";
 
+const desktopsim_pic = require("../assets/pictures/dev/desktopsim.gif");
 const virtualrooms_pic = require("../assets/pictures/dev/virtualrooms.gif");
 const bruinhub_pic = require("../assets/pictures/dev/bruinhub.gif");
 const snackapp_pic = require("../assets/pictures/dev/snackapp.gif");
@@ -12,6 +13,7 @@ const pavve_pic = require("../assets/pictures/dev/pavve.gif");
 
 const DEV = [
   {
+    src: desktopsim_pic,
     title: "Desktop Sim",
     description: (
       <div>
