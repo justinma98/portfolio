@@ -130,7 +130,7 @@ const window = props => {
           height: size.y
         }}
       >
-        {content}
+        {React.cloneElement(content, { open: open })}
         {open ? (
           <div>
             <div className="window__scaleIcon" />

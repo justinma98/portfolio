@@ -6,32 +6,34 @@ import "../Link/Link.scss";
 const iconContainer = props => {
   const { title, description, src, link, github } = props;
 
-  const openLink = url => {
-    const win = window.open(url, "_blank");
-    if (win) win.focus();
-  };
-
   let linkCmpt;
-  switch(typeof link){
+  switch (typeof link) {
     case "boolean":
-      linkCmpt = <Link {...props} title={props.windowTitle} />
+      linkCmpt = <Link {...props} title={props.windowTitle} />;
       break;
     case "string":
-      linkCmpt = <div className="link" onClick={() => openLink(link)}/>
+      linkCmpt = (
+        <a href={link} target="_blank">
+          <div className="link" />
+        </a>
+      );
       break;
   }
 
   return (
     <div className="infoCard">
       <div className="infoCard__pictureWrapper">
-        <img className="infoCard__picture" alt="northern lights" src={src} ></img>
+        <img
+          className="infoCard__picture"
+          alt="dev project picture"
+          src={src}
+        />
         <div className="infoCard__links">
           {linkCmpt}
           {github ? (
-            <div
-              className="infoCard__github"
-              onClick={() => openLink(github)}
-            />
+            <a href={github} target="_blank">
+              <div className="infoCard__github" />
+            </a>
           ) : null}
         </div>
       </div>

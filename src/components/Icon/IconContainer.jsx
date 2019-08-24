@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../Icon/Icon";
-import "./IconContainer.scss";
+import Icon from "./Icon";
+import "./Icon.scss";
 
 const iconContainer = props => {
   const { direction, icons, loading } = props;

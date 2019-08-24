@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./LandingPage.scss";
-import IconContainer from "../../components/IconContainer/IconContainer";
+import IconContainer from "../../components/Icon/IconContainer";
 import Loading from "../../components/Loading/Loading";
 import Icon from "../../components/Icon/Icon";
 import DESKTOP from "../../content/desktopContent";
