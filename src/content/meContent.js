@@ -1,6 +1,7 @@
 import React from "react";
 import { FILE_TYPE } from "../constants";
-import resume from "../assets/files/Justin_Ma.svg";
+import resume_pic from "../assets/files/Justin_Ma.svg";
+import resume_pdf from "../assets/files/Justin_Ma.pdf";
 
 const me_photo = require("../assets/pictures/background.jpg");
 
@@ -14,25 +15,24 @@ const ME = [
     content: (
       <div className={FILE_TYPE.TEXT}>
         <p>
-          Art and code are my two favorite things, which is great beacuse I love
-          creatings things. From websites to games to short films to tshirts.
-        </p>
-        <p>
-          I'm currently a 4th year student studying Computer Science at UCLA.
-        </p>
-        <p>
-          <a href="/static/media/Justin_Ma.5f2841f1.pdf" download>
+          <a href={resume_pdf} download>
             Resume
           </a>
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/justinma98/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/justinma98/" target="_blank">
+            LinkedIn
+          </a>
         </p>
         <p>
-          <a href="https://github.com/justinma98">GitHub</a>
+          <a href="https://github.com/justinma98" target="_blank">
+            GitHub
+          </a>
         </p>
         <p>
-          <a href="https://www.instagram.com/_justma/">Instagram</a>
+          <a href="https://www.instagram.com/_justma/" target="_blank">
+            Instagram
+          </a>
         </p>
       </div>
     )
@@ -43,15 +43,11 @@ const ME = [
     pos: { x: -300, y: 80 },
     title: "Resume.pdf",
     type: FILE_TYPE.PDF,
-    source: resume,
+    source: resume_pic,
     content: (
       <div>
-        <img className={FILE_TYPE.PDF} alt="resume" src={resume} />
-        <a
-          className="downloadIcon"
-          href="/static/media/Justin_Ma.5f2841f1.pdf"
-          download
-        />
+        <img className={FILE_TYPE.PDF} alt="resume" src={resume_pic} />
+        <a className="downloadIcon" href={resume_pdf} download />
       </div>
     )
   },
