@@ -22,7 +22,7 @@
                     </g>
                 </g>
             </g>
-            <g id="dating" transform="matrix(1,0,0,1,-13.6144,204.934)">
+            <g id="dating" transform="matrix(1,0,0,1,-13.6144,204.98)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.0857,535.612)">
                     <text x="78.225px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">EVELOPER</tspan></text>
                     <text x="78.12px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="83.817px 91.645px 100.013px 103.388px 107.437px 110.695px 116.393px 124.221px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">UN - JUL &apos;19</tspan></text>
@@ -41,27 +41,9 @@
                     </g>
                 </g>
             </g>
-            <g id="desktop" transform="matrix(1,0,0,1,-13.4075,680.085)">
+            <g id="snack" transform="matrix(1,0,0,1,-13.4075,654.999)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.7095,-30.0032)">
-                    <text x="78.225px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">EVELOPER</tspan></text>
-                    <text x="93.198px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="98.895px 106.723px 112.382px 115.756px 119.275px 125.975px 132.675px 136.05px 140.099px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">UL &apos;19 - P</tspan></text>
-                </g>
-                <g transform="matrix(2.08333,0,0,2.08333,11.9872,-158.727)">
-                    <g transform="matrix(1,0,0,1,-20.739,176.26)">
-                        <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+</text>
-                        <text x="208.843px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">Developed and designed an inter<tspan x="347.047px 351.853px " y="195.477px 195.477px ">ac</tspan>tive desktop simulator for my personal website</text>
-                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   <tspan x="208.681px 214.981px " y="207.477px 207.477px ">Ad</tspan>opted R<tspan x="253.195px " y="207.477px ">e</tspan>act functional components with hooks to pr<tspan x="435.067px 440.566px " y="207.477px 207.477px ">om</tspan>ote best pr<tspan x="493.09px 497.896px " y="207.477px 207.477px ">ac</tspan>tices</text>
-                    </g>
-                    <g transform="matrix(0.802203,0,0,0.802203,163.894,358.47)">
-                        <text x="0px" y="0px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:12.466px;">D<tspan x="10.77px 19.621px 28.023px 37.709px 45.662px 57.492px 66.342px 70.705px 79.107px 83.869px " y="0px 0px 0px 0px 0px 0px 0px 0px 0px 0px ">ESKTOP SIM</tspan></text>
-                        <text x="102.194px" y="0px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:11.219px;">/</text>
-                        <text x="111.954px" y="0px" style="font-family:'AvenirNext-Italic', 'Avenir Next', sans-serif;font-style:italic;font-size:11.219px;">R<tspan x="118.54px " y="0px ">e</tspan>act,<tspan x="142.448px 145.118px " y="0px 0px "> J</tspan>avaScript,<tspan x="199.519px 202.324px " y="0px 0px "> H</tspan>TML,<tspan x="234.646px 237.451px " y="0px 0px "> S</tspan>CSS</text>
-                    </g>
-                </g>
-            </g>
-            <g id="desktop1" serif:id="desktop" transform="matrix(1,0,0,1,-13.4075,564.442)">
-                <g transform="matrix(1.72882,0,0,1.72882,44.7095,-30.0032)">
-                    <text x="81.706px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">F<tspan x="88.951px 97.758px 104.384px 111.011px 118.093px 124.698px 133.298px 142.062px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">ULLSTACK</tspan></text>
+                    <text x="117.93px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">L<tspan x="124.557px 132.16px 140.955px " y="356.647px 356.647px 356.647px ">EAD</tspan></text>
                     <text x="78.225px" y="370.697px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="370.697px 370.697px 370.697px 370.697px 370.697px 370.697px 370.697px 370.697px ">EVELOPER</tspan></text>
                     <text x="106.395px" y="387.158px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">A<tspan x="113.809px 121.637px 129.88px 133.254px 136.773px 143.473px " y="387.158px 387.158px 387.158px 387.158px 387.158px 387.158px ">UG &apos;19</tspan></text>
                 </g>
@@ -69,7 +51,7 @@
                     <g transform="matrix(1,0,0,1,-20.739,176.26)">
                         <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+</text>
                         <text x="208.843px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">Developed and designed a web application for r<tspan x="407.878px " y="195.477px ">a</tspan>ting and r<tspan x="451.96px 457.108px " y="195.477px 195.477px ">eq</tspan>uesting of<tspan x="503.458px 508.354px " y="195.477px 195.477px ">ﬁc</tspan>e snacks</text>
-                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Built back<tspan x="248.884px 254.032px " y="207.477px 207.477px ">en</tspan>d for r<tspan x="283.966px 289.114px " y="207.477px 207.477px ">ec</tspan>eiving user r<tspan x="343.816px " y="207.477px ">a</tspan>tings and r<tspan x="391.894px 397.042px " y="207.477px 207.477px ">eq</tspan>uests using F<tspan x="455.767px 458.017px 461.095px 466.243px " y="207.477px 207.477px 207.477px 207.477px ">ireb</tspan>ase</text>
+                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Built back<tspan x="248.884px 254.032px " y="207.477px 207.477px ">en</tspan>d for r<tspan x="283.966px 289.114px " y="207.477px 207.477px ">ec</tspan>eiving and storing user r<tspan x="392.839px " y="207.477px ">a</tspan>tings and r<tspan x="440.917px 446.065px " y="207.477px 207.477px ">eq</tspan>uests using F<tspan x="504.79px 507.04px 510.118px 515.266px " y="207.477px 207.477px 207.477px 207.477px ">ireb</tspan>ase</text>
                         <text x="196.099px" y="219.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Integr<tspan x="233.233px " y="219.477px ">a</tspan>ted sorting algorithm to or<tspan x="346.057px 351.79px " y="219.477px 219.477px ">de</tspan>r snacks based on user pr<tspan x="461.041px 466.189px " y="219.477px 219.477px ">ef</tspan>er<tspan x="477.07px 482.218px " y="219.477px 219.477px ">en</tspan>ce</text>
                     </g>
                     <g transform="matrix(0.802203,0,0,0.802203,163.894,358.47)">
@@ -79,18 +61,16 @@
                     </g>
                 </g>
             </g>
-            <g id="color" transform="matrix(1,0,0,1,-13.3186,-116.805)">
+            <g id="color" transform="matrix(1,0,0,1,-13.3186,-1.91906)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.0857,535.612)">
-                    <text x="81.901px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">F<tspan x="89.146px 96.89px 107.182px 116.64px 123.895px 131.498px 140.955px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">RONTEND</tspan></text>
-                    <text x="78.225px" y="370.697px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="370.697px 370.697px 370.697px 370.697px 370.697px 370.697px 370.697px 370.697px ">EVELOPER</tspan></text>
-                    <text x="74.013px" y="387.158px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">O<tspan x="82.988px 90.643px 96.533px 99.907px 103.956px 107.331px 115.592px 122.167px 129.88px 133.254px 136.773px 143.473px " y="387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px ">CT - DEC &apos;18</tspan></text>
+                    <text x="78.225px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">EVELOPER</tspan></text>
+                    <text x="74.013px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">O<tspan x="82.988px 90.643px 96.533px 99.907px 103.956px 107.331px 115.592px 122.167px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">CT - DEC &apos;18</tspan></text>
                 </g>
                 <g transform="matrix(2.08333,0,0,2.08333,11.9872,407.226)">
                     <g transform="matrix(1,0,0,1,-20.739,176.26)">
                         <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+</text>
                         <text x="208.843px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">Developed a dr<tspan x="272.878px 277.684px " y="195.477px 195.477px ">aw</tspan>ing application tha<tspan x="360.682px " y="195.477px ">t</tspan> gener<tspan x="390.13px " y="195.477px ">a</tspan>tes music using pat<tspan x="473.083px 475.936px " y="195.477px 195.477px ">te</tspan>rn r<tspan x="494.881px 500.029px " y="195.477px 195.477px ">ec</tspan>ognition</text>
-                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Implemented algorithm for gener<tspan x="346.606px " y="207.477px ">a</tspan>ting paintbrush str<tspan x="426.067px 431.566px 435.994px 441.142px " y="207.477px 207.477px 207.477px 207.477px ">okes</tspan> based on mouse velocity</text>
-                        <text x="196.099px" y="219.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Built a history data structur<tspan x="317.536px 322.684px " y="219.477px 219.477px ">e </tspan>for undoing and r<tspan x="396.781px 401.929px " y="219.477px 219.477px ">ed</tspan>oing individual paint str<tspan x="503.998px 509.497px 513.925px 519.073px " y="219.477px 219.477px 219.477px 219.477px ">okes</tspan></text>
+                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Built a history data structur<tspan x="317.536px 322.684px " y="207.477px 207.477px ">e </tspan>for undoing and r<tspan x="396.781px 401.929px " y="207.477px 207.477px ">ed</tspan>oing individual paint str<tspan x="503.998px 509.497px 513.925px 519.073px " y="207.477px 207.477px 207.477px 207.477px ">okes</tspan></text>
                     </g>
                     <g transform="matrix(0.802203,0,0,0.802203,163.894,358.47)">
                         <text x="0px" y="0px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:12.466px;">C<tspan x="9.773px 21.603px 28.846px 40.676px " y="0px 0px 0px 0px ">OLOR</tspan></text>
@@ -99,7 +79,26 @@
                     </g>
                 </g>
             </g>
-            <g id="virtual-rooms" serif:id="virtual rooms" transform="matrix(1,0,0,1,-14,464.118)">
+            <g id="desktop" transform="matrix(1,0,0,1,-13.4075,448.299)">
+                <g transform="matrix(1.72882,0,0,1.72882,44.7095,-30.0032)">
+                    <text x="78.225px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">EVELOPER</tspan></text>
+                    <text x="76.587px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="82.285px 90.113px 95.772px 99.146px 103.195px 106.395px 113.809px 121.637px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">UL - AUG &apos;19</tspan></text>
+                </g>
+                <g transform="matrix(2.08333,0,0,2.08333,11.9872,-158.727)">
+                    <g transform="matrix(1,0,0,1,-20.739,176.26)">
+                        <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+</text>
+                        <text x="208.843px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">Developed and designed an inter<tspan x="347.047px 351.853px " y="195.477px 195.477px ">ac</tspan>tive desktop simulator for my personal website</text>
+                        <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   <tspan x="208.681px 214.981px " y="207.477px 207.477px ">Ad</tspan>opted R<tspan x="253.195px " y="207.477px ">e</tspan>act functional components with hooks to pr<tspan x="435.067px 440.566px " y="207.477px 207.477px ">om</tspan>ote best pr<tspan x="493.09px 497.896px " y="207.477px 207.477px ">ac</tspan>tices</text>
+                        <text x="196.099px" y="219.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Integr<tspan x="233.233px " y="219.477px ">a</tspan>ted React por<tspan x="293.065px 295.918px " y="219.477px 219.477px ">ta</tspan>ls for r<tspan x="325.96px 331.108px " y="219.477px 219.477px ">en</tspan>dering window components</text>
+                    </g>
+                    <g transform="matrix(0.802203,0,0,0.802203,163.894,358.47)">
+                        <text x="0px" y="0px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:12.466px;">D<tspan x="10.77px 19.621px 28.023px 37.709px 45.662px 57.492px 66.342px 70.705px 79.107px 83.869px " y="0px 0px 0px 0px 0px 0px 0px 0px 0px 0px ">ESKTOP SIM</tspan></text>
+                        <text x="102.194px" y="0px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:11.219px;">/</text>
+                        <text x="111.954px" y="0px" style="font-family:'AvenirNext-Italic', 'Avenir Next', sans-serif;font-style:italic;font-size:11.219px;">R<tspan x="118.54px " y="0px ">e</tspan>act,<tspan x="142.448px 145.118px " y="0px 0px "> J</tspan>avaScript,<tspan x="199.519px 202.324px " y="0px 0px "> H</tspan>TML,<tspan x="234.646px 237.451px " y="0px 0px "> S</tspan>CSS</text>
+                    </g>
+                </g>
+            </g>
+            <g id="virtual-rooms" serif:id="virtual rooms" transform="matrix(1,0,0,1,-14,463.653)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.7095,-161.11)">
                     <text x="78.225px" y="356.647px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:10.846px;">D<tspan x="87.563px 95.165px 103.213px 110.816px 117.117px 127.409px 134.947px 142.55px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">EVELOPER</tspan></text>
                     <text x="107.359px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">O<tspan x="116.335px 123.989px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">CT &apos;18</tspan></text>
@@ -118,7 +117,7 @@
                     </g>
                 </g>
             </g>
-            <g id="PROJ" transform="matrix(1,0,0,1,-14,-535.247)">
+            <g id="PROJ" transform="matrix(1,0,0,1,-14,-535.666)">
                 <g transform="matrix(1.71227,0,0,1.71227,124.122,1159.22)">
                     <text x="24.608px" y="151.16px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:14.6px;fill:rgb(227,87,87);">P<tspan x="34.975px 45.618px 58.949px 67.68px 78.046px 89.581px 99.334px " y="151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px ">ROJECTS</tspan></text>
                 </g>
@@ -126,7 +125,7 @@
                     <rect x="176.152" y="489.521" width="371.31" height="342.941" style="fill:rgb(227,87,87);"/>
                 </g>
             </g>
-            <g id="radio" transform="matrix(1,0,0,1,-14,0.104666)">
+            <g id="radio" transform="matrix(1,0,0,1,-14,-0.267342)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.4095,170.981)">
                     <text x="73.409px" y="356.647px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:10.846px;">U<tspan x="82.238px 90.871px 97.497px 106.044px 109.839px 117.746px 126.487px 135.858px 140.001px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">CLA RADIO</tspan></text>
                     <text x="75.825px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="81.407px 88.936px 97.304px 100.679px 104.728px 107.986px 113.684px 121.512px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">AN - JUN &apos;19</tspan></text>
@@ -144,7 +143,7 @@
                     </g>
                 </g>
             </g>
-            <g id="devx" transform="matrix(1,0,0,1,-14,-480.204)">
+            <g id="devx" transform="matrix(1,0,0,1,-14,-480.529)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.0857,535.612)">
                     <text x="116.835px" y="356.647px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:10.846px;">D<tspan x="126.205px 133.906px 142.073px " y="356.647px 356.647px 356.647px ">EVX</tspan></text>
                     <text x="54.491px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">O<tspan x="63.466px 71.121px 77.011px 80.385px 83.904px 90.604px 97.304px 100.679px 104.728px 107.986px 113.684px 121.512px 129.88px 133.254px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">CT &apos;18 - JUN &apos;19</tspan></text>
@@ -164,18 +163,17 @@
                     </g>
                 </g>
             </g>
-            <g id="coupa" transform="matrix(1,0,0,1,-14,-230.98)">
+            <g id="coupa" transform="matrix(1,0,0,1,-14,-231.259)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.4095,170.981)">
                     <text x="107.074px" y="356.647px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:10.846px;">C<tspan x="115.577px 125.869px 134.698px 141.747px " y="356.647px 356.647px 356.647px 356.647px ">OUPA</tspan></text>
                     <text x="81.956px" y="370.697px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:10.846px;">S<tspan x="89.265px 99.558px 106.857px 114.102px 125.945px 134.687px 142.593px " y="370.697px 370.697px 370.697px 370.697px 370.697px 370.697px 370.697px ">OFTWARE</tspan></text>
-                    <text x="90.489px" y="387.158px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="96.186px 104.014px 112.382px 115.756px 119.275px 125.975px 132.675px 136.05px 140.099px 143.473px " y="387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px ">UN &apos;19 - P</tspan></text>
+                    <text x="73.878px" y="387.158px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="79.576px 87.404px 95.772px 99.146px 103.195px 106.395px 113.809px 121.637px 129.88px 133.254px 136.773px 143.473px " y="387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px 387.158px ">UN - AUG &apos;19</tspan></text>
                 </g>
                 <g transform="matrix(2.08333,0,0,2.08333,12.3728,42.2564)">
                     <g>
                         <g transform="matrix(1,0,0,1,-20.739,176.26)">
-                            <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Integr<tspan x="233.233px " y="195.477px ">a</tspan>ted web accessibility standar<tspan x="355.471px 361.204px " y="195.477px 195.477px ">ds</tspan> by building scr<tspan x="428.029px 433.177px " y="195.477px 195.477px ">ee</tspan>nr<tspan x="446.632px 451.726px " y="195.477px 195.477px ">ea</tspan>der<tspan x="470.437px 473.317px " y="195.477px 195.477px ">-f</tspan>riendly err<tspan x="517.948px 523.447px " y="195.477px 195.477px ">or</tspan> messages</text>
-                            <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   B</text>
-                            <text x="214.567px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">uilt an at<tspan x="249.163px 252.016px " y="207.477px 207.477px ">ta</tspan>chment ﬁeld which communicates to the server thr<tspan x="463.255px 468.754px " y="207.477px 207.477px ">ou</tspan>gh <tspan x="487.006px 493.306px 497.626px 503.926px 509.659px 511.909px " y="207.477px 207.477px 207.477px 207.477px 207.477px 207.477px ">AJAX c</tspan>alls</text>
+                            <text x="196.099px" y="195.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Built k<tspan x="233.845px 238.993px " y="195.477px 195.477px ">ey</tspan>boar<tspan x="262.501px 268.234px " y="195.477px 195.477px ">d </tspan>and scr<tspan x="300.076px 305.224px " y="195.477px 195.477px ">ee</tspan>nr<tspan x="318.679px 323.773px " y="195.477px 195.477px ">ea</tspan>der friendly input ﬁelds to meet web accessibility standar<tspan x="561.418px 567.151px " y="195.477px 195.477px ">ds</tspan></text>
+                            <text x="196.099px" y="207.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Integr<tspan x="233.233px " y="207.477px ">a</tspan>ted <tspan x="253.771px 260.071px " y="207.477px 207.477px ">AP</tspan>I for format<tspan x="310.327px 313.18px " y="207.477px 207.477px ">ti</tspan>ng and sending form data to allow a<tspan x="463.21px 465.955px 468.808px " y="207.477px 207.477px 207.477px ">tta</tspan>chment ﬁeld ﬁle uploads</text>
                             <text x="196.099px" y="219.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+   Intr<tspan x="222.343px 227.842px " y="219.477px 219.477px ">od</tspan>uced centr<tspan x="277.297px 282.103px " y="219.477px 219.477px ">al</tspan>ized documentation</text>
                             <text x="368.35px" y="219.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">of<tspan x="376.72px 378.97px 384.253px " y="219.477px 219.477px 219.477px "> Re</tspan>act components for internal and external use</text>
                         </g>
@@ -185,7 +183,7 @@
                     </g>
                 </g>
             </g>
-            <g id="EXP" transform="matrix(1,0,0,1,-14,-226.52)">
+            <g id="EXP" transform="matrix(1,0,0,1,-14,-226.753)">
                 <g transform="matrix(1.71227,0,0,1.71227,37.872,487.485)">
                     <text x="54.379px" y="151.16px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:14.6px;fill:rgb(227,87,87);">E<tspan x="64.745px 75.812px 86.179px 96.545px 107.189px 112.766px 123.133px 135.981px 147.603px " y="151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px ">XPERIENCE</tspan></text>
                 </g>
@@ -193,7 +191,7 @@
                     <rect x="176.152" y="489.521" width="371.31" height="342.941" style="fill:rgb(227,87,87);"/>
                 </g>
             </g>
-            <g transform="matrix(1,-6.48393e-18,-1.49877e-17,1,363.32,437.597)">
+            <g transform="matrix(1,-6.48393e-18,-1.49877e-17,1,363.32,437.411)">
                 <g id="skills">
                     <text x="0px" y="14.175px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:18.75px;">+</text>
                     <text x="26.55px" y="14.175px" style="font-family:'AvenirNext-DemiBoldItalic', 'Avenir Next', sans-serif;font-weight:600;font-style:italic;font-size:18.75px;">Languages:</text>
@@ -203,7 +201,7 @@
                     <text x="179.644px" y="41.258px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:18.75px;">R<tspan x="190.65px 201.262px " y="41.258px 41.258px ">ea</tspan>ct,<tspan x="230.906px 235.594px 246.6px 257.325px " y="41.258px 41.258px 41.258px 41.258px "> Red</tspan>ux,<tspan x="293.55px 298.238px 308.438px 313.125px 319.538px 330.263px " y="41.258px 41.258px 41.258px 41.258px 41.258px 41.258px "> Fireb</tspan>ase,<tspan x="375.581px 380.269px " y="41.258px 41.258px "> G</tspan>it,<tspan x="409.819px 414.281px 423.506px " y="41.258px 41.258px 41.258px "> Je</tspan>st,<tspan x="452.813px 457.5px " y="41.258px 41.258px "> U</tspan>nity<tspan x="500.813px 505.125px 509.588px 527.138px 537.863px " y="41.258px 41.258px 41.258px 41.258px 41.258px ">, Web</tspan>GL,<tspan x="578.288px 582.975px " y="41.258px 41.258px "> D</tspan>ocz,<tspan x="630.6px 635.288px 645.488px 650.175px " y="41.258px 41.258px 41.258px 41.258px "> Fig</tspan>ma</text>
                 </g>
             </g>
-            <g id="SKILL" transform="matrix(1,0,0,1,-14,6.75172)">
+            <g id="SKILL" transform="matrix(1,0,0,1,-14,6.61222)">
                 <g transform="matrix(1.71227,0,0,1.71227,59.922,148.846)">
                     <text x="90.588px" y="151.16px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:14.6px;fill:rgb(227,87,87);">S<tspan x="100.429px 111.949px 117.526px 126.447px 135.368px " y="151.16px 151.16px 151.16px 151.16px 151.16px ">KILLS</tspan></text>
                 </g>
@@ -211,7 +209,7 @@
                     <rect x="176.152" y="489.521" width="371.31" height="342.941" style="fill:rgb(227,87,87);"/>
                 </g>
             </g>
-            <g id="ucla" transform="matrix(1,0,0,1,-14,-5.57191)">
+            <g id="ucla" transform="matrix(1,0,0,1,-14,-5.66491)">
                 <g transform="matrix(1.72882,0,0,1.72882,44.9533,-346.94)">
                     <text x="87.942px" y="356.647px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:10.846px;">E<tspan x="95.339px 103.169px 110.707px 118.104px 126.715px 133.602px 140.999px " y="356.647px 356.647px 356.647px 356.647px 356.647px 356.647px 356.647px ">XPECTED</tspan></text>
                     <text x="98.105px" y="373.107px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:9.641px;">J<tspan x="103.802px 111.63px 119.998px 123.372px 130.072px 136.773px 143.473px " y="373.107px 373.107px 373.107px 373.107px 373.107px 373.107px 373.107px ">UN 2020</tspan></text>
@@ -227,7 +225,7 @@
                         <text x="196.099px" y="221.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">+</text>
                         <text x="208.843px" y="221.477px" style="font-family:'AvenirNext-DemiBoldItalic', 'Avenir Next', sans-serif;font-weight:600;font-style:italic;font-size:9px;">C<tspan x="214.864px 220.3px " y="221.477px 221.477px ">ou</tspan>rsework:</text>
                         <text x="262.87px" y="221.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;">Oper<tspan x="284.515px " y="221.477px ">a</tspan>ting Systems,<tspan x="342.871px 344.959px 351.259px " y="221.477px 221.477px 221.477px "> Al</tspan>gorithms &amp; C<tspan x="407.455px " y="221.477px ">o</tspan>mplexity<tspan x="447.505px 449.575px 451.825px " y="221.477px 221.477px 221.477px ">, D</tspan>ata S<tspan x="478.285px " y="221.477px ">t</tspan>ructur<tspan x="505.267px 510.415px 514.411px 516.481px 518.731px " y="221.477px 221.477px 221.477px 221.477px 221.477px ">es, D</tspan>atabases,</text>
-                        <text x="262.687px" y="233.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;"><tspan x="262.687px 268.987px 272.119px 274.972px " y="233.477px 233.477px 233.477px 233.477px ">Arti</tspan>ﬁcial Intelligence,<tspan x="348.331px 350.581px 356.953px " y="233.477px 233.477px 233.477px "> Co</tspan>mputer Networks,<tspan x="435.766px 438.016px " y="233.477px 233.477px "> H</tspan>uman-C<tspan x="476.941px " y="233.477px ">o</tspan>mputer Inter<tspan x="533.524px 538.33px " y="233.477px 233.477px ">ac</tspan>tion</text>
+                        <text x="263.937px" y="233.477px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:9px;"><tspan x="263.937px 270.237px 273.369px 276.222px " y="233.477px 233.477px 233.477px 233.477px ">Arti</tspan>ﬁcial Intelligence,<tspan x="349.581px 351.831px 358.203px " y="233.477px 233.477px 233.477px "> Co</tspan>mputer Networks,<tspan x="437.016px 439.266px " y="233.477px 233.477px "> H</tspan>uman-C<tspan x="478.191px " y="233.477px ">o</tspan>mputer Inter<tspan x="534.774px 539.58px " y="233.477px 233.477px ">ac</tspan>tion</text>
                     </g>
                     <g transform="matrix(0.802203,0,0,0.802203,163.614,358.47)">
                         <text x="0px" y="0px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:12.466px;">U<tspan x="10.147px 21.117px 25.879px 35.265px 44.116px 53.204px 61.605px 66.367px 74.545px " y="0px 0px 0px 0px 0px 0px 0px 0px 0px ">NIVERSITY</tspan></text>
@@ -236,7 +234,7 @@
                     </g>
                 </g>
             </g>
-            <g id="EDU" transform="matrix(1,0,0,1,-14,1.60258)">
+            <g id="EDU" transform="matrix(1,0,0,1,-14,1.55608)">
                 <g id="_-EDUCATION-" serif:id="(EDUCATION)" transform="matrix(1.71227,0,0,1.71227,47.622,-33.1495)">
                     <text x="53.839px" y="151.16px" style="font-family:'AvenirNext-DemiBold', 'Avenir Next', sans-serif;font-weight:600;font-size:14.6px;fill:rgb(227,87,87);">E<tspan x="64.205px 76.82px 88.705px 100.151px 111.043px 120.796px 126.374px 140.23px " y="151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px 151.16px ">DUCATION</tspan></text>
                 </g>
@@ -252,9 +250,11 @@
                     <text x="154.272px" y="201.88px" style="font-family:'AvenirNext-UltraLight', 'Avenir Next', sans-serif;font-weight:275;font-size:18.75px;fill:rgb(227,87,87);">+</text>
                 </g>
                 <g transform="matrix(1,0,0,1,-250.588,114.055)">
-                    <text x="628.445px" y="113.852px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:18.75px;">justinma98@ucla.edu</text>
-                    <text x="821.627px" y="113.852px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:18.75px;">/</text>
-                    <text x="837.939px" y="113.852px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:18.75px;">github.com/justinma98</text>
+                    <text x="628.445px" y="113.852px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:18.75px;">majust.in</text>
+                    <text x="720.227px" y="113.852px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:18.75px;">/</text>
+                    <text x="741.227px" y="113.852px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:18.75px;">justinma98@ucla.edu</text>
+                    <text x="939.095px" y="113.852px" style="font-family:'AvenirNext-Regular', 'Avenir Next', sans-serif;font-size:18.75px;">/</text>
+                    <text x="960.095px" y="113.852px" style="font-family:'AvenirNext-Medium', 'Avenir Next', sans-serif;font-weight:500;font-size:18.75px;">github.com/justinma98</text>
                 </g>
             </g>
         </g>
