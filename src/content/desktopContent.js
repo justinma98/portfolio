@@ -41,7 +41,7 @@ const DESKTOP = [
     id: "desktop_design",
     size: { x: 400, y: 250 },
     pos: { x: -370, y: 270 },
-    title: "Graphic design is my passion",
+    title: "Graphic Design",
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" icons={DESIGN} />
   },

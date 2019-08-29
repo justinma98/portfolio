@@ -14,8 +14,11 @@ const icon = props => {
 
   useEffect(() => {
     switch (props.id) {
+      case "me_photo":
+        setTimeout(openWindow, 400);
+        break;
       case "desktop_readme":
-        setTimeout(openWindow, 500);
+        setTimeout(openWindow, 900);
         break;
     }
   }, [props.loading])

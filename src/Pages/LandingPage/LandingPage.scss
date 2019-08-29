@@ -1,28 +1,36 @@
-.landingPage {
+.landing {
   position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
 
-  .background {
+  &__background {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url("../../assets/pictures/background.jpg");
+    background-color: rgb(225, 225, 225);
     background-size: cover;
   }
 
-  .windowSpawn {
+  &__windowSpawn {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
   }
 
-  .recycleIcon {
+  &__desktop {
     position: absolute;
-    right: 2px;
-    bottom: 12px;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+  }
+
+  &__recycle {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
   }
 }

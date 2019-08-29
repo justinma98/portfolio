@@ -10,7 +10,7 @@ const ME = [
     id: "me_text",
     size: { x: 520, y: 360 },
     pos: { x: -280, y: 190 },
-    title: "About_Me.txt",
+    title: "About Me.txt",
     type: FILE_TYPE.TEXT,
     content: (
       <div className={FILE_TYPE.TEXT}>
@@ -63,8 +63,8 @@ const ME = [
   },
   {
     id: "me_photo",
-    size: { x: 530, y: 320 },
-    pos: { x: -100, y: 220 },
+    size: { x: 586, y: 440 },
+    pos: { x: -360, y: 60 },
     title: "me.jpg",
     type: FILE_TYPE.PICTURE,
     source: me_photo,

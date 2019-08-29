@@ -22,16 +22,18 @@ const landingPage = () => {
   };
 
   return (
-    <div className="landingPage">
-      <div className="background" />
-      <div id="windowSpawn" className="windowSpawn" />
-      <IconContainer
-        icons={DESKTOP}
-        direction="column"
-        length={0}
-        loading={loading}
-      />
-      <div className="recycleIcon">
+    <div className="landing">
+      <div className="landing__background" />
+      <div id="windowSpawn" className="landing__windowSpawn" />
+      <div className="landing__desktop">
+        <IconContainer
+          icons={DESKTOP}
+          direction="column"
+          length={0}
+          loading={loading}
+        />
+      </div>
+      <div className="landing__recycle">
         <Icon
           id="desktop_recycle"
           size={{ x: 500, y: 300 }}
