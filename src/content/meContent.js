@@ -3,7 +3,7 @@ import { FILE_TYPE } from "../constants";
 import resume_pic from "../assets/files/Justin_Ma.svg";
 import resume_pdf from "../assets/files/Justin_Ma.pdf";
 
-const me_photo = require("../assets/pictures/background.jpg");
+const me_photo = require("../assets/pictures/me.jpg");
 
 const ME = [
   {
@@ -64,7 +64,7 @@ const ME = [
   {
     id: "me_photo",
     size: { x: 586, y: 440 },
-    pos: { x: -360, y: 60 },
+    pos: { x: -360, y: 40 },
     title: "me.jpg",
     type: FILE_TYPE.PICTURE,
     source: me_photo,

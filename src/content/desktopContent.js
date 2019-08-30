@@ -71,18 +71,18 @@ const DESKTOP = [
   },
   {
     id: "desktop_readme",
-    size: { x: 400, y: 260 },
+    size: { x: 370, y: 260 },
     pos: { x: 50, y: 120 },
     title: "README.md",
     type: FILE_TYPE.TEXT,
     content: (
       <TyperContainer className={FILE_TYPE.TEXT}>
-        <Typer delay={300} phrase="Hello!" />
+        <Typer delay={600} phrase="Hello!" />
         <Typer
-          delay={1100}
+          delay={1400}
           phrase="My name's Justin Ma               and this is a portfolio of my creative       and coding work."
         />
-        <Typer delay={4700} phrase="Click around to explore:)" />
+        <Typer delay={5100} phrase="Click around to explore:)" />
       </TyperContainer>
     )
   }

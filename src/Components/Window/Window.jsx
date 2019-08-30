@@ -22,7 +22,7 @@ const window = props => {
     setTimeout(() => {
       closeWindow();
       windowComplete();
-    }, 400);
+    }, 500);
   }, []);
 
   const onMouseDown = (e, drag) => {

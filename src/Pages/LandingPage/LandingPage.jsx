@@ -36,7 +36,7 @@ const landingPage = () => {
       <div className="landing__recycle">
         <Icon
           id="desktop_recycle"
-          size={{ x: 500, y: 300 }}
+          size={{ x: 400, y: 280 }}
           pos={{ x: -250, y: 220 }}
           title="Recycling Bin"
           type={FILE_TYPE.RECYCLE}
