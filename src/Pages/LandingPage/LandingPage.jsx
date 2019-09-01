@@ -3,6 +3,7 @@ import "./LandingPage.scss";
 import IconContainer from "../../components/Icon/IconContainer";
 import Loading from "../../components/Loading/Loading";
 import Icon from "../../components/Icon/Icon";
+import Mobile from "../../components/Mobile/Mobile";
 import DESKTOP from "../../content/desktopContent";
 import { FILE_TYPE } from "../../constants";
 import RECYCLE from "../../content/recycleContent";
@@ -21,7 +22,9 @@ const landingPage = () => {
     setLoading(false);
   };
 
-  return (
+  return window.innerWidth < 700 ? (
+    <Mobile />
+  ) : (
     <div className="landing">
       <div className="landing__background" />
       <div id="windowSpawn" className="landing__windowSpawn" />
