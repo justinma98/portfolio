@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/21.23d10994.jpg"
   },
   {
-    "revision": "dfde798c01971d3ea0fd",
-    "url": "/static/css/main.5eace21e.chunk.css"
+    "revision": "99085209048e86ab8154",
+    "url": "/static/css/main.4cc27f66.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/Justin_Ma.fbe3eb33.pdf"
   },
   {
-    "revision": "a397688dcf9d9cde4ee9e100358e35ef",
-    "url": "/static/media/recycle-icon.a397688d.svg"
-  },
-  {
     "revision": "e041611b896997af9803eab0aa37c251",
     "url": "/static/media/folder-icon.e041611b.svg"
   },
   {
     "revision": "166b9c2a0486df3ba1da4410eadbe8c5",
     "url": "/static/media/text-icon.166b9c2a.svg"
+  },
+  {
+    "revision": "a397688dcf9d9cde4ee9e100358e35ef",
+    "url": "/static/media/recycle-icon.a397688d.svg"
   },
   {
     "revision": "5abe3b64718744bf48555926842d0508",
@@ -396,7 +396,7 @@ self.__precacheManifest = [
     "url": "/static/media/20.42af651b.jpg"
   },
   {
-    "revision": "dfde798c01971d3ea0fd",
+    "revision": "99085209048e86ab8154",
     "url": "/static/js/main.0500ab48.chunk.js"
   },
   {
@@ -792,7 +792,7 @@ self.__precacheManifest = [
     "url": "/static/media/22.e9ff2aeb.jpg"
   },
   {
-    "revision": "1e7308f9fe439bb0bee1c7a57bdd7c39",
+    "revision": "b84a589b9ab2fe2167cd276cda3e386b",
     "url": "/index.html"
   }
 ];
