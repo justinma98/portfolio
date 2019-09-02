@@ -1,0 +1,105 @@
+.spotify {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 49, 49);
+
+  &__playlist {
+    
+    &__song {
+
+    }
+  }
+
+  &__albumCover {
+    position: absolute;
+    min-width: 100px;
+    max-width: 35%;
+    min-height: 100px;
+    max-height: calc(100% - 60px);
+    bottom: 60px;
+    background-color: yellow;
+  }
+
+  &__toolBar {
+    position: absolute;
+    width: 100%;
+    min-width: 350px;
+    height: 60px;
+    bottom: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info, &__control, &__volume {
+      width: 30%;
+      height: 80%;
+    }
+
+    &__info {
+      color: white;
+    }
+
+    &__title, &__artist {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 5px 10px 5px 10px;
+    }
+
+    &__artist {
+      font-size: 13px;
+      margin: 0 0 0 10px;
+    }
+
+    &__button {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 10px;
+      left: 50%;
+      background-color: red;
+
+      &.-play {
+        transform: translate(-50%, 0);
+      }
+
+      &.-next {
+        transform: translate(calc(-50% + 40px), 0);
+      }
+
+      &.-prev {
+        transform: translate(calc(-50% - 40px), 0);
+      }
+    }
+
+    &__bar {
+      position: absolute;
+      height: 0px;
+      bottom: 15px;
+
+      &.-full {
+        
+      }
+      
+      &.-empty {
+        width: 30%;
+        left: 50%;
+        border: 1px solid grey;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    &__volume {
+      background-color: grey;
+    }
+  }
+}
