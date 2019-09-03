@@ -70,14 +70,14 @@ const DESKTOP = [
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" icons={MOVIES} />
   },
-  // {
-  //   id: "desktop_spotify",
-  //   size: { x: 370, y: 260 },
-  //   pos: { x: 50, y: 120 },
-  //   title: "Spotify",
-  //   type: FILE_TYPE.TEXT,
-  //   content: <Spotify />
-  // },
+  {
+    id: "desktop_spotify",
+    size: { x: 370, y: 260 },
+    pos: { x: 50, y: 120 },
+    title: "Spotify",
+    type: FILE_TYPE.TEXT,
+    content: <Spotify />
+  },
   {
     id: "desktop_readme",
     size: { x: 370, y: 260 },

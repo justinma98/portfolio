@@ -1,4 +1,6 @@
 import React from "react";
+import SpotifyToolBar from "./SpotifyToolBar";
+import SpotifyListItem from "./SpotifyListItem";
 import "./Spotify.scss";
 
 const albumCover = require("../../assets/pictures/photos/2019a/1.jpg");
@@ -6,27 +8,20 @@ const albumCover = require("../../assets/pictures/photos/2019a/1.jpg");
 const spotify = props => {
   return (
     <div className="spotify">
+      <img className="spotify__albumCover" alt="album cover" src={albumCover} />
       <div className="spotify__playlist">
-        <div className="spotify__playlist__song"></div>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFdwadwdawdMAFIA" title="Pufawdawdawdf Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFawdawdawdawdMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daawdawdawdawddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
+        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy"/>
       </div>
-      <img
-        className="spotify__albumCover"
-        alt="album cover"
-        src={albumCover}
-      ></img>
-      <div className="spotify__toolBar">
-        <div className="spotify__toolBar__info">
-          <p className="spotify__toolBar__title">Puff Daddy</p>
-          <p className="spotify__toolBar__artist">JPEGMAFIA</p>
-        </div>
-        <div className="spotify__toolBar__control">
-          <div className="spotify__toolBar__button -prev"></div>
-          <div className="spotify__toolBar__button -play"></div>
-          <div className="spotify__toolBar__button -next"></div>
-          <div className="spotify__toolBar__bar -empty"></div>
-        </div>
-        <div className="spotify__toolBar__volume"></div>
-      </div>
+      <SpotifyToolBar artist="JPEGMAFIA" title="Puff Daddy"/>
     </div>
   );
 };
