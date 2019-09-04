@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Slider from "../Slider/Slider";
 import "./Spotify.scss";
 import test_mp3 from "../../assets/songs/test.mp3";
-import { unwatchFile } from "fs";
 
 const testSong = new Audio(test_mp3);
 
@@ -10,39 +9,53 @@ const spotifyToolBar = props => {
   const [songTime, setSongTime] = useState(20);
   const [isPlaying, setIsPlaying] = useState(false);
   const [playInterval, setPlayInterval] = useState(undefined);
+  const [volume, setVolume] = useState(0.7);
+  const [mute, setMute] = useState(-1);
   let { title, artist } = props;
   let source = testSong;
   let songDuration = source.duration;
 
-  useEffect(() => {
-    console.log("song time", songTime);
-  }, [songTime])
+  const muteVol = () => {
+    setMute(volume);
+    setVolume(0);
+    source.volume = 0;
+  };
 
+  const unmuteVol = () => {
+    setVolume(mute);
+    source.volume = mute;
+    setMute(-1);
+  };
 
-  const updateSliderSongTime = songPercent => {
+  const toggleMute = () => {
+    mute < 0 ? muteVol() : unmuteVol();
+  };
+
+  const updateVolume = volumePercent => {
+    if (mute >= 0) unmuteVol();
+    let vol = 0.01 * volumePercent;
+    source.volume = vol;
+    setVolume(vol);
+  };
+
+  const updateSongTime = songPercent => {
     pauseSong();
-    console.log("slider", songPercent, 0.01 * songPercent * songDuration)
     setSongTime(0.01 * songPercent * songDuration);
   };
 
-  const updatePlaySongTime = () => {
-    console.log("update play")
-    setSongTime(source.currentTime)
-  }
-
   const playSong = () => {
+    source.volume = volume;
     source.currentTime = songTime;
     source.play();
-    setPlayInterval( setInterval(updatePlaySongTime, 1000));
+    setPlayInterval(setInterval(() => setSongTime(source.currentTime), 1000));
     setIsPlaying(true);
   };
 
   const pauseSong = () => {
     source.pause();
-    console.log("pause", playInterval)
     clearInterval(playInterval);
     setIsPlaying(false);
-  }
+  };
 
   const togglePlay = () => {
     isPlaying ? pauseSong() : playSong();
@@ -66,13 +79,18 @@ const spotifyToolBar = props => {
         <div className="spotifyToolBar__songBar">
           <Slider
             percent={(100 * songTime) / songDuration}
-            onChange={updateSliderSongTime}
+            onChange={updateSongTime}
           />
         </div>
       </div>
       <div className="spotifyToolBar__volume">
-        <div className="spotifyToolBar__icon" />
-        <div className="spotifyToolBar__volumeBar" />
+        <div
+          className={"spotifyToolBar__volumeIcon" + (mute < 0 ? "" : " -mute")}
+          onClick={toggleMute}
+        />
+        <div className="spotifyToolBar__volumeBar">
+          <Slider percent={volume * 100} onChange={updateVolume} />
+        </div>
       </div>
     </div>
   );

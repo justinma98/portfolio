@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import "./Slider.scss";
 
 const slider = props => {
-  // const [percent, setPercent] = useState(props.percent);
   const [mouseDown, setMouseDown] = useState(false);
   const sliderRef = useRef(null);
 
@@ -12,8 +11,6 @@ const slider = props => {
     let rect = sliderRef.current.getBoundingClientRect();
     let knobPos = Math.max(rect.left, Math.min(rect.right, pos));
     let knobPercent = (100 * (knobPos - rect.left)) / (rect.right - rect.left);
-
-    //setPercent(knobPercent);
     onChange(knobPercent);
   };
 

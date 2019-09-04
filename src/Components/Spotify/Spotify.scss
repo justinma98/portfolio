@@ -107,7 +107,31 @@
   }
 
   &__volume {
-    background-color: grey;
+    position: relative;
+  }
+
+  &__volumeIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    right: calc(40% + 28px);
+    background-image: url("../../assets/sprites/spotify-volume.svg");
+
+    &:hover {
+      background-color: rgb(77, 77, 77);
+    }
+
+    &.-mute {
+      background-image: url("../../assets/sprites/spotify-volume-mute.svg");
+    }
+  }
+
+  &__volumeBar {
+    position: absolute;
+    width: 40%;
+    top: 15px;
+    right: 20px;
   }
 }
 
