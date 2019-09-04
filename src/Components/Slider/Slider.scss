@@ -1,0 +1,47 @@
+.slider {
+  height: 20px;
+
+  &__empty, &__full {
+    position: absolute;
+    top: 10px;
+    height: 0px;
+    border-bottom: 2px solid grey;
+  }
+
+  &__empty {
+    width: 100%;
+  }
+
+  &__full {
+    border-color: white;
+
+    &.-hover {
+      border-color: rgb(0, 200, 0);
+    }
+  }
+
+  &__knob {
+    position: absolute;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: white;
+    display: none;
+    transform: translate(-4px, 0);
+
+    &.-hover {
+      display: block;
+    }
+  }
+
+  &:hover {
+    .slider__full {
+      border-color: rgb(0, 200, 0);
+    }
+
+    .slider__knob {
+      display: block;
+    }
+  }
+}

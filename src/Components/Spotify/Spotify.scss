@@ -82,6 +82,11 @@
       background-image: url("../../assets/sprites/spotify-play.svg");
     }
 
+    &.-pause {
+      transform: translate(-50%, 0);
+      background-image: url("../../assets/sprites/spotify-pause.svg");
+    }
+
     &.-next {
       transform: translate(calc(-50% + 30px), 0);
       background-image: url("../../assets/sprites/spotify-next.svg");
@@ -93,20 +98,12 @@
     }
   }
 
-  &__bar {
+  &__songBar {
     position: absolute;
-    height: 0px;
-    bottom: 15px;
-
-    &.-full {
-    }
-
-    &.-empty {
-      width: 30%;
-      left: 50%;
-      border: 1px solid grey;
-      transform: translate(-50%, 0);
-    }
+    bottom: 8px;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   &__volume {
