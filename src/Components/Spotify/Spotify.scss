@@ -19,7 +19,6 @@
     position: absolute;
     max-width: 35%;
     bottom: 60px;
-    background-color: yellow;
   }
 }
 
@@ -161,5 +160,12 @@
 
   &__title {
     margin: 0 10px;
+  }
+
+  &.-isPlaying {
+    .spotifyListItem__title,
+    .spotifyListItem__artist {
+      color: rgb(0, 255, 0);
+    }
   }
 }

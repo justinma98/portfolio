@@ -1,32 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import SpotifyToolBar from "./SpotifyToolBar";
 import SpotifyListItem from "./SpotifyListItem";
 import "./Spotify.scss";
 
-const albumCover = require("../../assets/pictures/photos/2019a/1.jpg");
-
 const spotify = props => {
+  const [songNum, setSongNum] = useState(0);
+
+  let { playlist } = props;
+
+  const handleSongChange = index => {
+    console.log("change to ", index)
+    if (index === songNum || index < 0 || index >= playlist.length) return;
+    setSongNum(index);
+  };
+
   return (
     <div className="spotify">
-      <img className="spotify__albumCover" alt="album cover" src={albumCover} />
+      <img
+        className="spotify__albumCover"
+        alt="album cover"
+        src={playlist[songNum].album}
+      />
       <div className="spotify__playlist">
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem
-          artist="JPEFdwadwdawdMAFIA"
-          title="Pufawdawdawdf Daddy"
-        />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFawdawdawdawdMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daawdawdawdawddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
-        <SpotifyListItem artist="JPEFMAFIA" title="Puff Daddy" />
+        {playlist.map((song, index) => (
+          <SpotifyListItem
+            key={index}
+            index={index}
+            isPlaying={index === songNum}
+            artist={song.artist}
+            title={song.title}
+            onClick={handleSongChange}
+          />
+        ))}
       </div>
       <SpotifyToolBar
-        artist="JPEGMAFIA"
-        title="Puff Daddy"
+        artist={playlist[songNum].artist}
+        title={playlist[songNum].title}
+        src={playlist[songNum].src}
       />
     </div>
   );

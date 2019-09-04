@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Slider from "../Slider/Slider";
 import "./Spotify.scss";
-import test_mp3 from "../../assets/songs/test.mp3";
-
-const testSong = new Audio(test_mp3);
 
 const spotifyToolBar = props => {
-  const [songTime, setSongTime] = useState(20);
+  const [songTime, setSongTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [playInterval, setPlayInterval] = useState(undefined);
-  const [volume, setVolume] = useState(0.7);
+  const [volume, setVolume] = useState(0.25);
   const [mute, setMute] = useState(-1);
-  let { title, artist } = props;
-  let source = testSong;
+  let { title, artist, src } = props;
+  let source = src;
   let songDuration = source.duration;
 
   const muteVol = () => {

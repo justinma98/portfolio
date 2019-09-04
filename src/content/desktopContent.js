@@ -12,6 +12,7 @@ import DESIGN from "./designContent";
 import ART from "./artContent";
 import PHOTOS from "./photoContent";
 import MOVIES from "./movieContent";
+import SPOTIFY from "./spotifyContent";
 
 const DESKTOP = [
   {
@@ -76,7 +77,7 @@ const DESKTOP = [
     pos: { x: 50, y: 120 },
     title: "Spotify",
     type: FILE_TYPE.TEXT,
-    content: <Spotify />
+    content: <Spotify playlist={SPOTIFY}/>
   },
   {
     id: "desktop_readme",
