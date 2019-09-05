@@ -1,19 +1,43 @@
 self.__precacheManifest = [
   {
-    "revision": "23d10994388ed247808bd0ec286cf59f",
-    "url": "/static/media/21.23d10994.jpg"
+    "revision": "c98b95bf0d14bfeccfd4c4f8331522c7",
+    "url": "/static/media/19.c98b95bf.jpg"
   },
   {
-    "revision": "99085209048e86ab8154",
-    "url": "/static/css/main.4cc27f66.chunk.css"
+    "revision": "60e93925434f88402fac",
+    "url": "/static/css/main.17d55d86.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "56ed8ac056733f8ddeaa",
-    "url": "/static/js/2.2560985a.chunk.js"
+    "revision": "8d79c18cf14eaaef7da4",
+    "url": "/static/js/2.c2dc257d.chunk.js"
+  },
+  {
+    "revision": "e2de6476dd1943233a5828bf47e29b69",
+    "url": "/static/media/spotify-play.e2de6476.svg"
+  },
+  {
+    "revision": "4f2630f68fc18fd502821b2adf8e870c",
+    "url": "/static/media/spotify-pause.4f2630f6.svg"
+  },
+  {
+    "revision": "5c1a3586358f1ecbb0dc09e8db815134",
+    "url": "/static/media/spotify-next.5c1a3586.svg"
+  },
+  {
+    "revision": "cf6af8569e03ad84e7f1978b5e9ce879",
+    "url": "/static/media/spotify-prev.cf6af856.svg"
+  },
+  {
+    "revision": "3c63590b9c327b3e1e5175f795947ea0",
+    "url": "/static/media/spotify-volume.3c63590b.svg"
+  },
+  {
+    "revision": "517b5a09352c015cee830e1fe55e9806",
+    "url": "/static/media/spotify-volume-mute.517b5a09.svg"
   },
   {
     "revision": "a3f6212f834d056e6d9ca4391918bbf3",
@@ -32,12 +56,16 @@ self.__precacheManifest = [
     "url": "/static/media/text-icon.166b9c2a.svg"
   },
   {
+    "revision": "5abe3b64718744bf48555926842d0508",
+    "url": "/static/media/computer-icon.5abe3b64.svg"
+  },
+  {
     "revision": "a397688dcf9d9cde4ee9e100358e35ef",
     "url": "/static/media/recycle-icon.a397688d.svg"
   },
   {
-    "revision": "5abe3b64718744bf48555926842d0508",
-    "url": "/static/media/computer-icon.5abe3b64.svg"
+    "revision": "44f61ef193719c5292f45205ede3ff99",
+    "url": "/static/media/spotify-icon.44f61ef1.svg"
   },
   {
     "revision": "e4af719ad9b3f990caabd24d4410b1bb",
@@ -48,16 +76,68 @@ self.__precacheManifest = [
     "url": "/static/media/link-icon.0888620d.svg"
   },
   {
-    "revision": "5c7a272dd7818bd0044189008f9ec11a",
-    "url": "/static/media/1.5c7a272d.jpg"
+    "revision": "b915846945828f47ba9c2ab3f025d262",
+    "url": "/static/media/radiohead.b9158469.mp3"
   },
   {
-    "revision": "16e481d8e1ad316827e1749b6422bef4",
-    "url": "/static/media/download-icon.16e481d8.svg"
+    "revision": "5f8190ea2fda41db29ee3c9fa8b64118",
+    "url": "/static/media/sza.5f8190ea.mp3"
+  },
+  {
+    "revision": "067e04005e59a20e1eec139873d2b0ad",
+    "url": "/static/media/jpegmafia.067e0400.mp3"
+  },
+  {
+    "revision": "45b1f86f4d847cd3e72edd4bd93ececd",
+    "url": "/static/media/tierra_whack.45b1f86f.mp3"
+  },
+  {
+    "revision": "5992e43d644c7b377fa0c8f8ce047de3",
+    "url": "/static/media/gorillaz.5992e43d.mp3"
+  },
+  {
+    "revision": "731fba3dc79dc0c34b5e9ea912eee003",
+    "url": "/static/media/kero_kero_bonito.731fba3d.mp3"
+  },
+  {
+    "revision": "989cb76bff3180f0df2da0659ac3cbd9",
+    "url": "/static/media/injury_reserve.989cb76b.mp3"
+  },
+  {
+    "revision": "1f84543bd60c2bc83676d4e39dba6490",
+    "url": "/static/media/kanye_west.1f84543b.mp3"
+  },
+  {
+    "revision": "e2ae72752f83a38665914a0c2eb79c49",
+    "url": "/static/media/steve_lacy.e2ae7275.mp3"
+  },
+  {
+    "revision": "2b19020cf2d92a676283c1c4f789e07a",
+    "url": "/static/media/tyler_the_creator.2b19020c.mp3"
+  },
+  {
+    "revision": "48da1299f935326d122cf2c33e7cca99",
+    "url": "/static/media/blood_orange.48da1299.mp3"
+  },
+  {
+    "revision": "41b27368bc9c970f28b2418d1433affc",
+    "url": "/static/media/cate_le_bon.41b27368.mp3"
+  },
+  {
+    "revision": "5ce854bad5e606f309a8f2aef5635db5",
+    "url": "/static/media/spoon.5ce854ba.mp3"
+  },
+  {
+    "revision": "f7bd2f15f84c1281067a2a76a0109618",
+    "url": "/static/media/alabama_shakes.f7bd2f15.mp3"
   },
   {
     "revision": "9534052908a3df16247a8b0856be5edb",
     "url": "/static/media/scale-corner.95340529.svg"
+  },
+  {
+    "revision": "16e481d8e1ad316827e1749b6422bef4",
+    "url": "/static/media/download-icon.16e481d8.svg"
   },
   {
     "revision": "c75167352d113c72c7b88144637dfb28",
@@ -116,12 +196,12 @@ self.__precacheManifest = [
     "url": "/static/media/pavve.3ea766e5.gif"
   },
   {
-    "revision": "d31fc0c336b7335083762d4753211b21",
-    "url": "/static/media/pic-left.d31fc0c3.svg"
-  },
-  {
     "revision": "868309799948fe8a0715697a54409e26",
     "url": "/static/media/pic-right.86830979.svg"
+  },
+  {
+    "revision": "d31fc0c336b7335083762d4753211b21",
+    "url": "/static/media/pic-left.d31fc0c3.svg"
   },
   {
     "revision": "059af9c5b177516e55fe5061f2607e44",
@@ -388,16 +468,16 @@ self.__precacheManifest = [
     "url": "/static/media/18.c36720f1.jpg"
   },
   {
-    "revision": "c98b95bf0d14bfeccfd4c4f8331522c7",
-    "url": "/static/media/19.c98b95bf.jpg"
+    "revision": "60e93925434f88402fac",
+    "url": "/static/js/main.8098df39.chunk.js"
   },
   {
     "revision": "42af651bf29461333569680d726fdb4c",
     "url": "/static/media/20.42af651b.jpg"
   },
   {
-    "revision": "99085209048e86ab8154",
-    "url": "/static/js/main.0500ab48.chunk.js"
+    "revision": "23d10994388ed247808bd0ec286cf59f",
+    "url": "/static/media/21.23d10994.jpg"
   },
   {
     "revision": "4d1a91c22891fde2468e37a2640b940f",
@@ -708,6 +788,10 @@ self.__precacheManifest = [
     "url": "/static/media/21.e2f6c679.jpg"
   },
   {
+    "revision": "5c7a272dd7818bd0044189008f9ec11a",
+    "url": "/static/media/1.5c7a272d.jpg"
+  },
+  {
     "revision": "8b3df51bc4fc225c18dde1f72155316f",
     "url": "/static/media/2.8b3df51b.jpg"
   },
@@ -792,7 +876,63 @@ self.__precacheManifest = [
     "url": "/static/media/22.e9ff2aeb.jpg"
   },
   {
-    "revision": "b84a589b9ab2fe2167cd276cda3e386b",
+    "revision": "1ece18fbefeffe6f9f51bf1ea6e5f769",
+    "url": "/static/media/radiohead.1ece18fb.jpg"
+  },
+  {
+    "revision": "8ad15ba63000903dc1e1287e41055b68",
+    "url": "/static/media/sza.8ad15ba6.jpg"
+  },
+  {
+    "revision": "701cc10a64763df5a03bc20f4e07f0b6",
+    "url": "/static/media/jpegmafia.701cc10a.jpg"
+  },
+  {
+    "revision": "9b4dcb9516da24a700228f2847e680cc",
+    "url": "/static/media/tierra_whack.9b4dcb95.jpg"
+  },
+  {
+    "revision": "5c6b662586a0600abd3d70ef2ffdbd8c",
+    "url": "/static/media/gorillaz.5c6b6625.jpg"
+  },
+  {
+    "revision": "33b39ac218b1fbfb098aee3e6f04f954",
+    "url": "/static/media/kero_kero_bonito.33b39ac2.jpg"
+  },
+  {
+    "revision": "a631e2caabd334cd0fb7c46d094a7504",
+    "url": "/static/media/injury_reserve.a631e2ca.jpg"
+  },
+  {
+    "revision": "ecfa87fff34da7c127fc958e14cb4257",
+    "url": "/static/media/kanye_west.ecfa87ff.jpg"
+  },
+  {
+    "revision": "695dfdd0e9631dab06ec18f8833f4fb5",
+    "url": "/static/media/steve_lacy.695dfdd0.jpg"
+  },
+  {
+    "revision": "8948ec4d0a0cec7be36677caea1efcdc",
+    "url": "/static/media/tyler_the_creator.8948ec4d.jpg"
+  },
+  {
+    "revision": "404f6287799e93cc804bbb91b3d3a915",
+    "url": "/static/media/blood_orange.404f6287.jpg"
+  },
+  {
+    "revision": "37a741ac83edf5648ba34faa1d0e1246",
+    "url": "/static/media/cate_le_bon.37a741ac.jpg"
+  },
+  {
+    "revision": "29a891ef10912dff59fa9cee0792cbec",
+    "url": "/static/media/spoon.29a891ef.jpg"
+  },
+  {
+    "revision": "28eee1fa85dfd3a0df6f87377aaa8a6b",
+    "url": "/static/media/alabama_shakes.28eee1fa.jpg"
+  },
+  {
+    "revision": "213c106c3c258ea090d42470aec8893e",
     "url": "/index.html"
   }
 ];
