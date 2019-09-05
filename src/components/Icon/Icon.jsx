@@ -15,9 +15,6 @@ const icon = props => {
   useEffect(() => {
     if (!props.loading) {
       switch (props.id) {
-        case "desktop_spotify":
-          setTimeout(openWindow, 0);
-          break;
         case "me_photo":
           setTimeout(openWindow, 400);
           break;
