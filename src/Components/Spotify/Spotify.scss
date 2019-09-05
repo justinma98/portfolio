@@ -1,105 +1,175 @@
 .spotify {
   position: relative;
   width: 100%;
+  min-width: 280px;
   height: 100%;
   background-color: rgb(49, 49, 49);
+  user-select: none;
 
   &__playlist {
-    
-    &__song {
-
-    }
+    position: absolute;
+    width: calc(65% - 20px);
+    height: calc(100% - 80px);
+    right: 0px;
+    overflow-y: scroll;
+    padding: 10px;
   }
 
   &__albumCover {
     position: absolute;
-    min-width: 100px;
     max-width: 35%;
-    min-height: 100px;
-    max-height: calc(100% - 60px);
     bottom: 60px;
-    background-color: yellow;
+  }
+}
+
+.spotifyToolBar {
+  position: absolute;
+  width: 100%;
+  min-width: 350px;
+  height: 60px;
+  bottom: 0px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info,
+  &__control,
+  &__volume {
+    width: 30%;
+    height: 80%;
   }
 
-  &__toolBar {
-    position: absolute;
+  &__info {
+    color: white;
+  }
+
+  &__title,
+  &__artist {
+    display: inline-block;
     width: 100%;
-    min-width: 350px;
-    height: 60px;
-    bottom: 0px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    &__info, &__control, &__volume {
-      width: 30%;
-      height: 80%;
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 10px 5px 10px;
+  }
+
+  &__artist {
+    font-size: 13px;
+    margin: 0 0 0 10px;
+  }
+
+  &__button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 50%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgb(77, 77, 77);
     }
 
-    &__info {
-      color: white;
+    &.-play {
+      transform: translate(-50%, 0);
+      background-image: url("../../assets/sprites/spotify-play.svg");
     }
 
-    &__title, &__artist {
-      display: inline-block;
-      width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+    &.-pause {
+      transform: translate(-50%, 0);
+      background-image: url("../../assets/sprites/spotify-pause.svg");
     }
 
-    &__title {
-      font-weight: bold;
-      font-size: 16px;
-      margin: 5px 10px 5px 10px;
+    &.-next {
+      transform: translate(calc(-50% + 30px), 0);
+      background-image: url("../../assets/sprites/spotify-next.svg");
     }
 
-    &__artist {
-      font-size: 13px;
-      margin: 0 0 0 10px;
+    &.-prev {
+      transform: translate(calc(-50% - 30px), 0);
+      background-image: url("../../assets/sprites/spotify-prev.svg");
+    }
+  }
+
+  &__songBar {
+    position: absolute;
+    bottom: 8px;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__volume {
+    position: relative;
+  }
+
+  &__volumeIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    right: calc(40% + 28px);
+    background-image: url("../../assets/sprites/spotify-volume.svg");
+
+    &:hover {
+      background-color: rgb(77, 77, 77);
     }
 
-    &__button {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 10px;
-      left: 50%;
-      background-color: red;
-
-      &.-play {
-        transform: translate(-50%, 0);
-      }
-
-      &.-next {
-        transform: translate(calc(-50% + 40px), 0);
-      }
-
-      &.-prev {
-        transform: translate(calc(-50% - 40px), 0);
-      }
+    &.-mute {
+      background-image: url("../../assets/sprites/spotify-volume-mute.svg");
     }
+  }
 
-    &__bar {
-      position: absolute;
-      height: 0px;
-      bottom: 15px;
+  &__volumeBar {
+    position: absolute;
+    width: 40%;
+    top: 15px;
+    right: 20px;
+  }
+}
 
-      &.-full {
-        
-      }
-      
-      &.-empty {
-        width: 30%;
-        left: 50%;
-        border: 1px solid grey;
-        transform: translate(-50%, 0);
-      }
-    }
+.spotifyListItem {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid grey;
 
-    &__volume {
-      background-color: grey;
+  &:first-child {
+    border-top: 1px solid grey;
+  }
+
+  &:hover {
+    background-color: rgb(77, 77, 77);
+  }
+
+  &__title,
+  &__artist {
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__title {
+    margin: 0 10px;
+    width: 50%;
+  }
+
+  &__artist {
+    width: 30%;
+  }
+
+  &.-isPlaying {
+    .spotifyListItem__title,
+    .spotifyListItem__artist {
+      color: rgb(0, 255, 0);
     }
   }
 }

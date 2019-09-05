@@ -6,7 +6,8 @@ export const FILE_TYPE = {
   PDF: "pdf",
   EXPLORER: "explorer",
   RECYCLE: "recycle",
-  COMPUTER: "computer"
+  COMPUTER: "computer",
+  SPOTIFY: "spotify"
 };
 
 export const ICON = {
@@ -21,4 +22,4 @@ export const WINDOW = {
   MIN_HEIGHT: 80
 }
 
-export const NUM_WINDOWS = 29;
+export const NUM_WINDOWS = 30;

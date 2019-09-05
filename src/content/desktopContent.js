@@ -12,6 +12,7 @@ import DESIGN from "./designContent";
 import ART from "./artContent";
 import PHOTOS from "./photoContent";
 import MOVIES from "./movieContent";
+import SPOTIFY from "./spotifyContent";
 
 const DESKTOP = [
   {
@@ -70,14 +71,14 @@ const DESKTOP = [
     type: FILE_TYPE.FOLDER,
     content: <IconContainer direction="row" icons={MOVIES} />
   },
-  // {
-  //   id: "desktop_spotify",
-  //   size: { x: 370, y: 260 },
-  //   pos: { x: 50, y: 120 },
-  //   title: "Spotify",
-  //   type: FILE_TYPE.TEXT,
-  //   content: <Spotify />
-  // },
+  {
+    id: "desktop_spotify",
+    size: { x: 540, y: 330 },
+    pos: { x: -190, y: 70 },
+    title: "Spotify",
+    type: FILE_TYPE.SPOTIFY,
+    content: <Spotify playlist={SPOTIFY}/>
+  },
   {
     id: "desktop_readme",
     size: { x: 370, y: 260 },

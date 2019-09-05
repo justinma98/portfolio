@@ -1,32 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import SpotifyToolBar from "./SpotifyToolBar";
+import SpotifyListItem from "./SpotifyListItem";
 import "./Spotify.scss";
 
-const albumCover = require("../../assets/pictures/photos/2019a/1.jpg");
-
 const spotify = props => {
+  const [songNum, setSongNum] = useState(0);
+
+  let { playlist } = props;
+
+  const handleSongChange = index => {
+    if (index === songNum || index < 0 || index >= playlist.length) return;
+    setSongNum(index);
+  };
+
   return (
     <div className="spotify">
-      <div className="spotify__playlist">
-        <div className="spotify__playlist__song"></div>
-      </div>
       <img
         className="spotify__albumCover"
         alt="album cover"
-        src={albumCover}
-      ></img>
-      <div className="spotify__toolBar">
-        <div className="spotify__toolBar__info">
-          <p className="spotify__toolBar__title">Puff Daddy</p>
-          <p className="spotify__toolBar__artist">JPEGMAFIA</p>
-        </div>
-        <div className="spotify__toolBar__control">
-          <div className="spotify__toolBar__button -prev"></div>
-          <div className="spotify__toolBar__button -play"></div>
-          <div className="spotify__toolBar__button -next"></div>
-          <div className="spotify__toolBar__bar -empty"></div>
-        </div>
-        <div className="spotify__toolBar__volume"></div>
+        src={playlist[songNum].album}
+      />
+      <div className="spotify__playlist">
+        {playlist.map((song, index) => (
+          <SpotifyListItem
+            key={index}
+            index={index}
+            isPlaying={index === songNum}
+            artist={song.artist}
+            title={song.title}
+            onClick={handleSongChange}
+          />
+        ))}
       </div>
+      <SpotifyToolBar
+        index={songNum}
+        lastIndex={playlist.length - 1}
+        artist={playlist[songNum].artist}
+        title={playlist[songNum].title}
+        src={playlist[songNum].src}
+        onChange={handleSongChange}
+      />
     </div>
   );
 };
