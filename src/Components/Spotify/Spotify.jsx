@@ -9,7 +9,6 @@ const spotify = props => {
   let { playlist } = props;
 
   const handleSongChange = index => {
-    console.log("change to ", index)
     if (index === songNum || index < 0 || index >= playlist.length) return;
     setSongNum(index);
   };
@@ -34,9 +33,12 @@ const spotify = props => {
         ))}
       </div>
       <SpotifyToolBar
+        index={songNum}
+        lastIndex={playlist.length - 1}
         artist={playlist[songNum].artist}
         title={playlist[songNum].title}
         src={playlist[songNum].src}
+        onChange={handleSongChange}
       />
     </div>
   );

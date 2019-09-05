@@ -152,7 +152,6 @@
   &__artist {
     color: white;
     display: inline-block;
-    width: 40%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -160,6 +159,11 @@
 
   &__title {
     margin: 0 10px;
+    width: 50%;
+  }
+
+  &__artist {
+    width: 30%;
   }
 
   &.-isPlaying {
