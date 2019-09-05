@@ -6,7 +6,8 @@ export const FILE_TYPE = {
   PDF: "pdf",
   EXPLORER: "explorer",
   RECYCLE: "recycle",
-  COMPUTER: "computer"
+  COMPUTER: "computer",
+  SPOTIFY: "spotify"
 };
 
 export const ICON = {

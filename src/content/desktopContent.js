@@ -73,10 +73,10 @@ const DESKTOP = [
   },
   {
     id: "desktop_spotify",
-    size: { x: 370, y: 260 },
-    pos: { x: 50, y: 120 },
+    size: { x: 540, y: 330 },
+    pos: { x: -190, y: 70 },
     title: "Spotify",
-    type: FILE_TYPE.TEXT,
+    type: FILE_TYPE.SPOTIFY,
     content: <Spotify playlist={SPOTIFY}/>
   },
   {
